@@ -13,7 +13,7 @@ export default function AstroSection() {
               Why IOI People Is the Best Technology Partner?
             </h2>
             <p className="text-lg text-white leading-relaxed">
-              We're not just a tech provider—we're your growth partner. Built by experienced professionals, our flexible and fully customizable systems deliver real business impact. With enterprise-level security, real-time insights, and genuine human support, we help you build a strong digital foundation for sustainable growth.
+              We&apos;re not just a tech provider—we&apos;re your growth partner. Built by experienced professionals, our flexible and fully customizable systems deliver real business impact. With enterprise-level security, real-time insights, and genuine human support, we help you build a strong digital foundation for sustainable growth.
             </p>
             <a href="#">
               <button className="border-2 border-white text-white px-4 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-colors mt-12 h-[32px] font-semibold text-xs">

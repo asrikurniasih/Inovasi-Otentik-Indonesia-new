@@ -6,7 +6,7 @@ export default function CareerPage() {
       <div className="container mx-auto px-4 pt-12 text-center gap-8 items-center mb-3">
         <h1 className="text-4xl font-extrabold mb-4 text-blue-700 text-center">Build the Future With Us</h1>
         <p className="mb-6 max-w-3xl text-lg mx-auto">
-          We're a team of innovators, engineers, designers, and strategists who believe in building technology that makes a real impact. If you're passionate about solving problems, using AI, and creating meaningful digital products — we’d love to meet you.
+          We&apos;re a team of innovators, engineers, designers, and strategists who believe in building technology that makes a real impact. If you&apos;re passionate about solving problems, using AI, and creating meaningful digital products — we’d love to meet you.
         </p>
       </div>
       <section className="container mx-auto px-4 pb-16 grid lg:grid-cols-2 gap-8 items-center">

@@ -9,7 +9,7 @@ export default function CodeSection() {
             By developers, for entrepreneurs
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 leading-tight">
-            Don't write from scratch. Coded examples are included.
+            Don&apos;t write from scratch. Coded examples are included.
           </h2>
           <p className="text-gray-700 font-light lg:pr-20" style={{ lineHeight: '1.625 !important' }}>
             Using our ecommerce starter template will save a lot of coding time, as it provides a solid foundation for the Online Store, allowing your team to focus on customizing and adding specific features to meet the needs of your particular project.

@@ -4,7 +4,7 @@ export default function ProSection() {
   const stats = [
     { count: "140+", title: "Coded Elements", desc: "From buttons, inputs, navbar, alert, table, card to chart." },
     { count: "10", title: "Example Pages", desc: "Save months of work when you use our ready-made pages." },
-    { count: "30+", title: "Design Blocks", desc: "Mix and match the sections you've created and unleash your creativity." },
+    { count: "30+", title: "Design Blocks", desc: "Mix and match the sections you&apos;ve created and unleash your creativity." },
     { count: "40+", title: "Global Styles", desc: "Colors, typography system, shadows, and blur effects ready to use." },
   ]
 

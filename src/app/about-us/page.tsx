@@ -31,7 +31,7 @@ export default function AboutUsPage() {
           </p> */}
           <h3 className="text-xl font-semibold mt-6 mb-1">Our Philosophy</h3>
           <p className="mb-4 max-w-3xl">
-            We don't just build systems - we create impact. Through AI-driven platforms, smart integrations, and scalable applications, we help organizations transform digitally while staying aligned with their goals and culture.
+            We don&apos;t just build systems - we create impact. Through AI-driven platforms, smart integrations, and scalable applications, we help organizations transform digitally while staying aligned with their goals and culture.
           </p>
           <h3 className="text-xl font-semibold mt-6 mb-1">Our Vision</h3>
           <p className="mb-4 max-w-3xl">
@@ -162,7 +162,7 @@ export default function AboutUsPage() {
       <section className="container mx-auto px-4 py-12 text-center">
         <h2 className="text-2xl font-bold mb-4">Let’s Work Together</h2>
         <p className="mb-6 max-w-2xl mx-auto">
-          Whether you're just starting your digital journey or scaling up your infrastructure, we're here to help.
+          Whether you&apos;re just starting your digital journey or scaling up your infrastructure, we&apos;re here to help.
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a href="mailto:hi@ioi.co.id">
@@ -276,7 +276,7 @@ export default function AboutUsPage() {
           </div>
         </div>
         <div className="text-center mt-10">
-          <h3 className="text-xl font-bold mb-2">Let's Build the Future Together</h3>
+          <h3 className="text-xl font-bold mb-2">Let&apos;s Build the Future Together</h3>
           <p className="mb-4 max-w-2xl mx-auto">
             No matter where you are in your digital journey, our team is ready to collaborate and create solutions that make a difference.
           </p>
@@ -300,7 +300,7 @@ export default function AboutUsPage() {
           <h2 className="text-2xl font-bold mb-4">Career</h2>
           <h3 className="text-xl font-semibold mb-2">Build the Future With Us</h3>
           <p className="mb-4 max-w-3xl">
-            We're a team of innovators, engineers, designers, and strategists who believe in building technology that makes a real impact. If you're passionate about solving problems, using AI, and creating meaningful digital products — we’d love to meet you.
+            We&apos;re a team of innovators, engineers, designers, and strategists who believe in building technology that makes a real impact. If you&apos;re passionate about solving problems, using AI, and creating meaningful digital products — we’d love to meet you.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white p-6 rounded-lg shadow text-center">

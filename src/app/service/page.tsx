@@ -40,7 +40,7 @@ export default function ServicePage() {
         <div>
           <div>
             <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">🛠️ Custom Software & Application Development</h2>
-            <p className="mb-2 text-gray-700">From concept to deployment, we build digital solutions to match your unique needs.<br/>Our development team creates tailored web and mobile applications that align with your business processes — whether you're optimizing internal operations or launching a new digital product.</p>
+            <p className="mb-2 text-gray-700">From concept to deployment, we build digital solutions to match your unique needs.<br/>Our development team creates tailored web and mobile applications that align with your business processes — whether you&apos;re optimizing internal operations or launching a new digital product.</p>
             <ul className="list-disc ml-6 text-gray-700 text-sm mb-2">
               <li>Full-cycle software development</li>
               <li>Web & mobile application design</li>
@@ -76,7 +76,7 @@ export default function ServicePage() {
         <div>
           <div>
             <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">💼 Strategic IT Consulting</h2>
-            <p className="mb-2 text-gray-700">From concept to deployment, we build digital solutions to match your unique needs.<br/>Our development team creates tailored web and mobile applications that align with your business processes — whether you're optimizing internal operations or launching a new digital product.</p>
+            <p className="mb-2 text-gray-700">From concept to deployment, we build digital solutions to match your unique needs.<br/>Our development team creates tailored web and mobile applications that align with your business processes — whether you&apos;re optimizing internal operations or launching a new digital product.</p>
             <ul className="list-disc ml-6 text-gray-700 text-sm mb-2">
               <li>Digital transformation strategy</li>
               <li>System assessment & gap analysis</li>
@@ -138,7 +138,7 @@ export default function ServicePage() {
           </div>
         </div>
         <div className="text-center mt-12">
-          <h3 className="text-2xl font-bold mb-2 text-blue-700">Let's Build the Future Together</h3>
+          <h3 className="text-2xl font-bold mb-2 text-blue-700">Let&apos;s Build the Future Together</h3>
           <p className="text-md text-gray-700 mb-4 max-w-2xl mx-auto">No matter where you are in your digital journey, our team is ready to collaborate and create solutions that make a difference.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/contact" className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">📩 Get in Touch</a>

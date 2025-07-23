@@ -13,7 +13,7 @@ export default function GitHubSection() {
               Let’s build something impactful — together.
             </h2>
             <p className="text-lg text-white leading-relaxed">
-              Whether you're looking to implement AI-powered solutions, automate workflows, or create a custom digital system, our team is ready to help you move forward.
+              Whether you&apos;re looking to implement AI-powered solutions, automate workflows, or create a custom digital system, our team is ready to help you move forward.
             </p>
             <a href="#">
               <button className="border-2 border-white text-white px-6 rounded-lg font-medium hover:bg-white hover:text-red-600 transition-colors mt-5 h-[32px] font-semibold text-xs">
