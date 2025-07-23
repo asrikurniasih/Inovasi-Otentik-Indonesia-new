@@ -10,9 +10,9 @@ export default function HeroSection() {
             We are your strategic partner in creating a smarter, more efficient, and data-driven business ecosystem. Welcome to the future of innovation with Inovasi Otentik Indonesia.
           </div>
           <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
-            <a href="#pricing">
+            <a href="#">
               <button className="bg-gray-900 text-white px-6 rounded-lg font-semibold hover:bg-gray-800 transition-colors h-[40px] text-[14px]">
-                Learn More
+                Explore Our Solutions
               </button>
             </a>
           </div>

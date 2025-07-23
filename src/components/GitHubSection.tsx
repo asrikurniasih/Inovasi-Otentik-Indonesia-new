@@ -6,14 +6,14 @@ export default function GitHubSection() {
       <div className="container mx-auto">
         <div className="bg-red-600 rounded-3xl overflow-hidden flex flex-col md:flex-row md:gap-8">
           <div className="py-20 px-14 md:w-7/12">
-            <p className="text-white font-normal opacity-70 mb-2">
+            {/* <p className="text-white font-normal opacity-70 mb-2">
               Open Source
-            </p>
-            <h2 className="text-3xl lg:text-4xl font-normal text-white mb-5">
-              Join us for a better web!
+            </p> */}
+            <h2 className="text-2xl lg:text-3xl font-normal text-white mb-5">
+              Let’s build something impactful — together.
             </h2>
             <p className="text-lg text-white leading-relaxed">
-              AstroLaunch UI is an open source and powerful design system that allows you to create an Ecommerce website that will be loved by your users.
+              Whether you're looking to implement AI-powered solutions, automate workflows, or create a custom digital system, our team is ready to help you move forward.
             </p>
             <a href="#">
               <button className="border-2 border-white text-white px-6 rounded-lg font-medium hover:bg-white hover:text-red-600 transition-colors mt-5 h-[32px] font-semibold text-xs">

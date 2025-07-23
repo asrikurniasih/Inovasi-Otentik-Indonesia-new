@@ -11,34 +11,25 @@ export default function ProSection() {
   return (
     <section className="bg-white px-8 py-20">
       <div className="container mx-auto relative">
-        <div className="text-left">
-          <p className="text-blue-600 font-bold text-lg mb-5">
-            Fully Coded Components based on Astro
-          </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 leading-tight">
-            Astro LaunchUI Pro
-          </h2>
-          <p className="text-gray-700 font-light mb-5 lg:w-[30rem]" style={{ lineHeight: '1.625 !important' }}>
-            All the sections and pages made with these elements will be fully responsive and will look beautiful on all types of screens, including phones, tables, or desktops.
-          </p>
-        </div>
         <div className="lg:flex relative">
           <div className="lg:w-1/2">
             <div className="p-2 lg:p-0 mb-8">
-              <div className="grid gap-y-16 gap-x-8 grid-cols-2 md:grid-cols-2 mb-8">
-                {stats.map((stat, key) => (
-                  <div key={key} className="bg-transparent">
-                    <h3 className="text-5xl font-bold text-gray-900 mb-4">{stat.count}</h3>
-                    <h4 className="text-xl font-semibold text-gray-900 mb-2">{stat.title}</h4>
-                    <p className="text-gray-600">{stat.desc}</p>
-                  </div>
-                ))}
+              <div className="text-left">
+                <p className="text-blue-600 font-bold text-lg mb-5">
+                  Why Choose Us?
+                </p>
+                <p className="text-gray-700 font-light mb-5 lg:w-[30rem]" style={{ lineHeight: '1.625 !important' }}>
+                  Choosing the right technology partner is critical to your digital transformation. At PT Inovasi Otentik Indonesia, we bring more than just technical solutions — we deliver measurable impact with a human-centered approach.
+                </p>
               </div>
-              <a href="#" target="_blank">
-                <button className="bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800">
-                  Astro Pro
-                </button>
-              </a>
+              <ul className="text-gray-700 font-light mb-5 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4" style={{ lineHeight: '1.625 !important' }}>
+                <li><span className="font-semibold text-gray-900">Authentic & Localized Solutions</span><br/>We build solutions that are tailored to the real needs of local institutions, industries, and communities — not just generic tools.</li>
+                <li><span className="font-semibold text-gray-900">AI-Driven Innovation</span><br/>Our platforms are built with Artificial Intelligence and data analytics at their core, ensuring automation, insight, and performance.</li>
+                <li><span className="font-semibold text-gray-900">End-to-End Expertise</span><br/>From strategy and development to deployment and support, we provide full-cycle solutions for sustainable impact.</li>
+                <li><span className="font-semibold text-gray-900">Scalable & Customizable</span><br/>Every product we offer can grow with your organization — modular, flexible, and fully adaptable.</li>
+                <li><span className="font-semibold text-gray-900">Trusted by Government & Enterprises</span><br/>We have successfully served public institutions, educational sectors, and private companies across Indonesia.</li>
+                <li><span className="font-semibold text-gray-900">Commitment to Long-Term Partnerships</span><br/>We go beyond project delivery — we stay with you to ensure adoption, training, and continuous improvement.</li>
+              </ul>
             </div>
           </div>
           <Image 
@@ -46,7 +37,8 @@ export default function ProSection() {
             alt="components" 
             width={600} 
             height={400}
-            className="lg:w-1/2 rounded-3xl hidden md:flex ml-auto lg:absolute -right-32 -top-24" 
+            className="lg:w-1/2 rounded-3xl hidden md:flex ml-auto lg:absolute -right-32"
+            style={{ top: '0px' }} 
           />
         </div>
       </div>

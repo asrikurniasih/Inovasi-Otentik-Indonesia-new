@@ -1,17 +1,13 @@
 export default function Footer() {
   const socialMedia = [
-    { icon: "fab fa-twitter", link: "#" },
-    { icon: "fab fa-facebook-square", link: "#" },
-    { icon: "fab fa-dribbble", link: "#" },
-    { icon: "fab fa-github", link: "#" },
-    { icon: "fab fa-discord", link: "#" },
+    { icon: "fa-solid fa-envelope", link: "mailto:hi@ioi.co.id" },
   ]
 
   const footerSections = [
     {
       title: "Company",
       links: [
-        { name: "About Us", link: "#" },
+        { name: "About Us", link: "/about-us" },
         { name: "Blog", link: "#" },
         { name: "Github", link: "#" },
         { name: "Free Product", link: "#" },
@@ -50,10 +46,10 @@ export default function Footer() {
         <div className="flex flex-wrap">
           <div className="w-full md:w-4/12">
             <h4 className="text-xl font-semibold text-black mb-2">
-              AstroLaunch UI
+              PT Inovasi Otentik Indonesia
             </h4>
             <p className="text-md mt-0 mb-2 font-normal text-gray-600">
-              Easy to use for Tailwind CSS and Material Design.
+              Delivering authentic, intelligent, and integrated technology solutions for businesses, governments, and education sectors across Indonesia.
             </p>
             <div className="mt-6">
               {socialMedia.map(({ icon, link }, key) => (
@@ -95,7 +91,7 @@ export default function Footer() {
             <div className="text-md mt-2 py-1 font-normal text-gray-600">
               Copyright &copy; {new Date().getFullYear()}{" "}
               <a href="/" className="text-inherit transition-all">
-                AstroLaunch UI
+                PT Inovasi Otentik Indonesia
               </a>{" "}
                 by{" "}
               <a
@@ -104,7 +100,7 @@ export default function Footer() {
                 rel="noreferrer"
                 className="text-inherit transition-all"
               >
-                Creative Tim. Built with ❤️ for better web.
+                Creative Tim.
               </a>
             </div>
           </div>

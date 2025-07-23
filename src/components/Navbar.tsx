@@ -1,13 +1,16 @@
+"use client";
+
 import React from "react";
+import Link from "next/link";
 
 // Profile menu items
-const profileMenuItems = [
-  { label: "My Profile", icon: "👤" },
-  { label: "Edit Profile", icon: "⚙️" },
-  { label: "Inbox", icon: "📧" },
-  { label: "Help", icon: "❓" },
-  { label: "Sign Out", icon: "🚪" },
-];
+// const profileMenuItems = [
+//   { label: "My Profile", icon: "👤" },
+//   { label: "Edit Profile", icon: "⚙️" },
+//   { label: "Inbox", icon: "📧" },
+//   { label: "Help", icon: "❓" },
+//   { label: "Sign Out", icon: "🚪" },
+// ];
 
 // Account menu items
 const accountItems = [
@@ -22,60 +25,88 @@ const navListMenuItems = [
   { title: "404", href: "/404" },
 ];
 
-function ProfileMenu() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+// Solution menu items
+const solutionMenuItems = [
+  { title: "SIAGA", href: "#" },
+  { title: "IOCX", href: "#" },
+  { title: "IOCORE", href: "#" },
+  { title: "IOPeople", href: "#" },
+  { title: "Distribution Management System", href: "#" },
+  { title: "Nyuciin", href: "#" },
+];
+
+// function ProfileMenu() {
+//   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   
-  return (
-    <div className="relative">
-      <button
-        className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 hover:bg-gray-100 transition-colors"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-      >
-        <img
-          src="https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80"
-          alt="Profile"
-          className="w-8 h-8 rounded-full border border-gray-300"
-        />
-        <svg
-          className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : ""}`}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
+//   return (
+//     <div className="relative">
+//       <button
+//         className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 hover:bg-gray-100 transition-colors"
+//         onClick={() => setIsMenuOpen(!isMenuOpen)}
+//       >
+//         <img
+//           src="https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80"
+//           alt="Profile"
+//           className="w-8 h-8 rounded-full border border-gray-300"
+//         />
+//         <svg
+//           className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : ""}`}
+//           fill="none"
+//           viewBox="0 0 24 24"
+//           stroke="currentColor"
+//         >
+//           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+//         </svg>
+//       </button>
       
-      {isMenuOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border py-1 z-50">
-          {profileMenuItems.map((item, index) => (
-            <button
-              key={item.label}
-              className={`w-full px-4 py-2 text-left hover:bg-gray-100 flex items-center gap-2 ${
-                index === profileMenuItems.length - 1 ? "text-red-500 hover:bg-red-50" : ""
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span>{item.icon}</span>
-              <span className="text-sm">{item.label}</span>
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
+//       {isMenuOpen && (
+//         <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border py-1 z-50">
+//           {profileMenuItems.map((item, index) => (
+//             <button
+//               key={item.label}
+//               className={`w-full px-4 py-2 text-left hover:bg-gray-100 flex items-center gap-2 ${
+//                 index === profileMenuItems.length - 1 ? "text-red-500 hover:bg-red-50" : ""
+//               }`}
+//               onClick={() => setIsMenuOpen(false)}
+//             >
+//               <span>{item.icon}</span>
+//               <span className="text-sm">{item.label}</span>
+//             </button>
+//           ))}
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
 
 function DropdownMenu({ title, items, icon }: { title: string; items: Array<{ title: string; href: string }>; icon?: string }) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   
+  // Close dropdown when clicking outside
+  React.useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      const dropdown = document.getElementById(`dropdown-menu-${title}`);
+      if (dropdown && !dropdown.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    }
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen, title]);
+
   return (
-    <div 
-      className="relative"
-      onMouseEnter={() => setIsMenuOpen(true)}
-      onMouseLeave={() => setIsMenuOpen(false)}
-    >
-      <button className="hidden lg:flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900">
+    <div className="relative" id={`dropdown-menu-${title}`}> 
+      <button
+        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900"
+        onClick={() => setIsMenuOpen((open) => !open)}
+        type="button"
+      >
         {icon && <span className="text-sm">{icon}</span>}
         <span className="text-sm font-normal">{title}</span>
         <svg
@@ -87,39 +118,20 @@ function DropdownMenu({ title, items, icon }: { title: string; items: Array<{ ti
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      
       {isMenuOpen && (
-        <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border py-1 z-50">
+        <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border py-1 z-50">
           {items.map((item) => (
-            <a
+            <Link
               key={item.title}
               href={item.href}
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              onClick={() => setIsMenuOpen(false)}
             >
               {item.title}
-            </a>
+            </Link>
           ))}
         </div>
       )}
-      
-      {/* Mobile version */}
-      <div className="lg:hidden">
-        <div className="flex items-center gap-2 px-3 py-2 text-blue-gray-900">
-          {icon && <span className="text-sm">{icon}</span>}
-          <span className="text-sm font-normal">{title}</span>
-        </div>
-        <div className="ml-6">
-          {items.map((item) => (
-            <a
-              key={item.title}
-              href={item.href}
-              className="block px-3 py-1 text-sm text-gray-700 hover:text-blue-600"
-            >
-              {item.title}
-            </a>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }
@@ -127,16 +139,25 @@ function DropdownMenu({ title, items, icon }: { title: string; items: Array<{ ti
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-      <DropdownMenu title="Pages" items={navListMenuItems} icon="📄" />
-      <DropdownMenu title="Account" items={accountItems} icon="👤" />
-      
-      <a
-        href="https://www.creative-tim.com/learning-lab/astro/quick-start/astro-launch-ui/"
+      <Link
+        href="/service"
         className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
       >
-        <span className="text-sm">📚</span>
-        <span className="text-sm font-normal">Docs</span>
-      </a>
+        <span className="text-sm font-normal">Service</span>
+      </Link>
+      <DropdownMenu title="Solution" items={solutionMenuItems} />
+      <Link
+        href="/about-us"
+        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
+      >
+        <span className="text-sm font-normal">About</span>
+      </Link>
+      <Link
+        href="/career"
+        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
+      >
+        <span className="text-sm font-normal">Career</span>
+      </Link>
     </ul>
   );
 }
@@ -178,12 +199,12 @@ export default function ComplexNavbar() {
       }`}
     >
       <div className="relative mx-auto flex items-center text-blue-gray-900">
-        <a
+        <Link
           href="/"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium text-lg hover:text-blue-600 transition-colors"
         >
           Inovasi Otentik Indonesia
-        </a>
+        </Link>
         
         <div className="hidden lg:flex ml-auto">
           <NavList />
@@ -198,7 +219,7 @@ export default function ComplexNavbar() {
           </svg>
         </button>
         
-        <a 
+        {/* <a 
           href="https://discord.gg/WCvQWMwT" 
           target="_blank"
           rel="noopener noreferrer"
@@ -214,13 +235,13 @@ export default function ComplexNavbar() {
           className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
         >
           <i className="fab fa-github text-xl leading-none text-gray-700 hover:text-gray-900 transition-colors" aria-hidden="true"></i>
-        </a>
+        </a> */}
         
-        <a href="/astro-launch-ui/#examplePages">
+        {/* <a href="/astro-launch-ui/#examplePages">
           <button className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors">
             Get started
           </button>
-        </a>
+        </a> */}
       </div>
       
       {/* Mobile Menu */}

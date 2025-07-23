@@ -20,11 +20,11 @@ export default function FeaturesSection() {
   ]
 
   return (
-    <section className="px-4 mt-12 bg-white">
+    <section className="px-4 lg:py-20 bg-white">
       <div className="container mx-auto mb-10 text-center">
         <div className="flex justify-center align-center relative z-5">
           <p className="text-xl text-gray-900 mr-2 font-normal">
-            Services We Offer
+            Our Services
           </p>
         </div>
       </div>

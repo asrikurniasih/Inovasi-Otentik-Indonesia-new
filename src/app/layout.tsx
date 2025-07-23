@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: "Inovasi Otentik Indonesia",
@@ -49,12 +51,14 @@ export default function RootLayout({
         />
       </head>
       <body className="overflow-x-hidden antialiased font-sans bg-white">
+        <Navbar />
         {children}
         <Script
           src="https://kit.fontawesome.com/349ee9c857.js"
           crossOrigin="anonymous"
           strategy="beforeInteractive"
         />
+        <Footer />
       </body>
     </html>
   );
