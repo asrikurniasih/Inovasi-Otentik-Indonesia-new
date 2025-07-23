@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   const socialMedia = [
     { icon: "fa-solid fa-envelope", link: "mailto:hi@ioi.co.id" },
@@ -90,9 +92,9 @@ export default function Footer() {
           <div className="text-center lg:text-left">
             <div className="text-md mt-2 py-1 font-normal text-gray-600">
               Copyright &copy; {new Date().getFullYear()}{" "}
-              <a href="/" className="text-inherit transition-all">
+              <Link href="/" className="text-inherit transition-all">
                 PT Inovasi Otentik Indonesia
-              </a>{" "}
+              </Link>{" "}
                 by{" "}
               <a
                 href="#"
