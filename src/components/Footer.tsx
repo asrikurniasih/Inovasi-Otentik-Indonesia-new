@@ -3,6 +3,7 @@ import Link from 'next/link'
 export default function Footer() {
   const socialMedia = [
     { icon: "fa-solid fa-envelope", link: "mailto:hi@ioi.co.id" },
+    { icon: "fa-solid fa-location-dot", link: "https://www.google.com/maps?q=-7.7512265,110.4490606" },
   ]
 
   const footerSections = [
@@ -51,7 +52,8 @@ export default function Footer() {
               PT Inovasi Otentik Indonesia
             </h4>
             <p className="text-md mt-0 mb-2 font-normal text-gray-600">
-              Delivering authentic, intelligent, and integrated technology solutions for businesses, governments, and education sectors across Indonesia.
+              Jl. Abiyoso, Sidokerto, N0 28, Blok I <br />
+              Daerah Istimewa Yogyakarta
             </p>
             <div className="mt-6">
               {socialMedia.map(({ icon, link }, key) => (
