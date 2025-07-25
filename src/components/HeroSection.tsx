@@ -22,7 +22,7 @@ export default function HeroSection() {
         <img
           src="/header.png"
           alt="components"
-          className="w-1/2 3xl:w-[35%] 4xl:w-[35%] h-auto absolute -top-10 right-0"
+          className="w-1/2 3xl:w-[45%] 4xl:w-[35%] h-auto absolute -top-10 right-0"
         />
       </div>
     </section>
