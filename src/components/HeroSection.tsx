@@ -19,7 +19,11 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="hidden lg:flex">
-        <img src="header.png" alt="components" className="absolute -top-10 right-0 w-1/2" />
+        <img
+          src="/header.png"
+          alt="components"
+          className="w-1/2 3xl:w-[35%] 4xl:w-[35%] h-auto absolute -top-10 right-0"
+        />
       </div>
     </section>
   )

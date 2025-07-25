@@ -52,7 +52,7 @@ export default function Footer() {
               PT Inovasi Otentik Indonesia
             </h4>
             <p className="text-md mt-0 mb-2 font-normal text-gray-600">
-              Jl. Abiyoso, Sidokerto, N0 28, Blok I <br />
+              Jl. Abiyoso, Sidokerto, No. 28, Blok I <br />
               Daerah Istimewa Yogyakarta
             </p>
             <div className="mt-6">
@@ -96,16 +96,7 @@ export default function Footer() {
               Copyright &copy; {new Date().getFullYear()}{" "}
               <Link href="/" className="text-inherit transition-all">
                 PT Inovasi Otentik Indonesia
-              </Link>{" "}
-                by{" "}
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                className="text-inherit transition-all"
-              >
-                Creative Tim.
-              </a>
+              </Link>
             </div>
           </div>
         </div>

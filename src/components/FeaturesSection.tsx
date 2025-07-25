@@ -3,18 +3,23 @@ import Image from "next/image"
 export default function FeaturesSection() {
   const features = [
     {
-      icon: "/icon1.png",
-      title: "Proactive Managed Services",
-      description: "We proactively manage your IT, ensuring your systems remain reliable and secure.",
+      icon: "/data-integration.png",
+      title: "Data Integration & System Automation",
+      description: "Connect, process, and manage data from multiple sources to streamline decision-making.",
     },
     {
-      icon: "/icon2.png",
-      title: "Custom Application Development",
-      description: "Building custom AI-powered applications to enhance operational efficiency for your business.",
+      icon: "/coding.png",
+      title: "Custom Software & Application Development",
+      description: "From concept to deployment, we build digital solutions to match your unique needs.",
     },
     {
-      icon: "/icon3.png",
-      title: "Strategic IT Consultation",
+      icon: "/ai-solutions.png",
+      title: "AI Solutions",
+      description: "Tailored AI models for prediction, classification, automation, and optimization of business processes.",
+    },
+    {
+      icon: "/consultant.png",
+      title: "Strategic IT Consulting",
       description: "Expert guidance for your successful digital transformation journey.",
     }
   ]
@@ -23,12 +28,12 @@ export default function FeaturesSection() {
     <section className="px-4 lg:py-20 bg-white">
       <div className="container mx-auto mb-10 text-center">
         <div className="flex justify-center align-center relative z-5">
-          <p className="text-xl text-gray-900 mr-2 font-normal">
+          <p className="text-xl font-extrabold mb-8 text-gray-900">
             Our Services
           </p>
         </div>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-1 gap-y-20 md:grid-cols-2 lg:grid-cols-4">
         {features.map(({ icon, title, description }) => (
           <div key={title} className="bg-transparent">
             <div className="grid justify-center text-center">

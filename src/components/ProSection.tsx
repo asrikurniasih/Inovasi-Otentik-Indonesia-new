@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { FaStar } from "react-icons/fa"
 
 export default function ProSection() {
   const stats = [
@@ -23,12 +24,48 @@ export default function ProSection() {
                 </p>
               </div>
               <ul className="text-gray-700 font-light mb-5 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4" style={{ lineHeight: '1.625 !important' }}>
-                <li><span className="font-semibold text-gray-900">Authentic & Localized Solutions</span><br/>We build solutions that are tailored to the real needs of local institutions, industries, and communities — not just generic tools.</li>
-                <li><span className="font-semibold text-gray-900">AI-Driven Innovation</span><br/>Our platforms are built with Artificial Intelligence and data analytics at their core, ensuring automation, insight, and performance.</li>
-                <li><span className="font-semibold text-gray-900">End-to-End Expertise</span><br/>From strategy and development to deployment and support, we provide full-cycle solutions for sustainable impact.</li>
-                <li><span className="font-semibold text-gray-900">Scalable & Customizable</span><br/>Every product we offer can grow with your organization — modular, flexible, and fully adaptable.</li>
-                <li><span className="font-semibold text-gray-900">Trusted by Government & Enterprises</span><br/>We have successfully served public institutions, educational sectors, and private companies across Indonesia.</li>
-                <li><span className="font-semibold text-gray-900">Commitment to Long-Term Partnerships</span><br/>We go beyond project delivery — we stay with you to ensure adoption, training, and continuous improvement.</li>
+                <li><span className="font-semibold text-gray-900 flex items-center gap-2">
+                  <Image src="/biometric-authentication.png" alt="check" width={20} height={20} />
+                  Authentic & Localized Solutions</span>
+                  <p className="text-gray-700 font-light mb-5" style={{ lineHeight: '1.625 !important' }}>
+                    We build solutions that are tailored to the real needs of local institutions, industries, and communities — not just generic tools.
+                  </p>
+                </li>
+                <li><span className="font-semibold text-gray-900 flex items-center gap-2">
+                  <Image src="/ai.png" alt="check" width={20} height={20} />
+                  AI-Driven Innovation</span>
+                  <p className="text-gray-700 font-light mb-5" style={{ lineHeight: '1.625 !important' }}>
+                    Our platforms are built with Artificial Intelligence and data analytics at their core, ensuring automation, insight, and performance.
+                  </p>
+                </li>
+                <li><span className="font-semibold text-gray-900 flex items-center gap-2">
+                  <Image src="/experience.png" alt="check" width={20} height={20} />
+                  End-to-End Expertise</span>
+                  <p className="text-gray-700 font-light mb-5" style={{ lineHeight: '1.625 !important' }}>
+                    From strategy and development to deployment and support, we provide full-cycle solutions for sustainable impact.
+                  </p>
+                </li>
+                <li><span className="font-semibold text-gray-900 flex items-center gap-2">
+                  <Image src="/scalability.png" alt="check" width={20} height={20} />
+                  Scalable & Customizable</span>
+                  <p className="text-gray-700 font-light mb-5" style={{ lineHeight: '1.625 !important' }}>
+                    Every product we offer can grow with your organization — modular, flexible, and fully adaptable.
+                  </p>
+                </li>
+                <li><span className="font-semibold text-gray-900 flex items-center gap-2">
+                  <Image src="/accountability.png" alt="check" width={20} height={20} />
+                  Trusted by Government & Enterprises</span>
+                  <p className="text-gray-700 font-light mb-5" style={{ lineHeight: '1.625 !important' }}>
+                    We have successfully served public institutions, educational sectors, and private companies across Indonesia.
+                  </p>
+                </li>
+                <li><span className="font-semibold text-gray-900 flex items-center gap-2">
+                  <Image src="/partnership.png" alt="check" width={20} height={20} />
+                  Commitment to Long-Term Partnerships</span>
+                  <p className="text-gray-700 font-light mb-5" style={{ lineHeight: '1.625 !important' }}>
+                    We go beyond project delivery — we stay with you to ensure adoption, training, and continuous improvement.
+                  </p>
+                </li>
               </ul>
             </div>
           </div>

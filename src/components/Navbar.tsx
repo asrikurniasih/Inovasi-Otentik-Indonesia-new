@@ -143,7 +143,7 @@ function NavList() {
         href="/service"
         className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
       >
-        <span className="text-sm font-normal">Service</span>
+        <span className="text-sm font-normal">Services</span>
       </Link>
       <DropdownMenu title="Solution" items={solutionMenuItems} />
       <Link

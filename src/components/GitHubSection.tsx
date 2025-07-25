@@ -21,7 +21,7 @@ export default function GitHubSection() {
               </button>
             </a>
           </div>
-          <div className="relative grid h-96 place-items-center md:h-auto md:w-5/12">
+          {/* <div className="relative grid h-96 place-items-center md:h-auto md:w-5/12">
             <Image
               src="/github.png"
               alt="github"
@@ -29,7 +29,7 @@ export default function GitHubSection() {
               height={300}
               className="h-full w-full object-cover md:absolute"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

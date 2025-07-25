@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image"
+import React from "react";
 
 export default function ServicePage() {
   return (
@@ -60,7 +62,7 @@ export default function ServicePage() {
         </div>
         <div>
           <div>
-            <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">🤖 AI & Machine Learning Solutions</h2>
+            <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">🤖 AI Solutions</h2>
             <p className="mb-2 text-gray-700">Tailored AI models for prediction, classification, automation, and optimization of business processes.<br/>We design and deploy intelligent systems that unlock the value of your data, enabling you to automate decisions, identify patterns, and forecast outcomes.</p>
             <ul className="list-disc ml-6 text-gray-700 text-sm mb-2">
               <li>Predictive analytics and data modeling</li>
@@ -96,56 +98,116 @@ export default function ServicePage() {
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">From Ideas to Impactful Digital Solutions</p>
           <p className="text-md text-gray-600 max-w-3xl mx-auto mt-2">At PT Inovasi Otentik Indonesia, we follow a structured, collaborative, and agile development process to ensure every project meets your goals, timelines, and expectations.</p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 sm:mx-16">
-          <div>
-            <div className="mb-8">
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-1">🔹 1. Discovery & Consultation</h3>
-              <p className="text-gray-700 mb-1">We start by understanding your business, challenges, and goals through in-depth consultations.</p>
-              <p className="text-green-700 text-sm">✅ What we do: Needs assessment, stakeholder interviews, technical scoping</p>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-1">🔹 2. Planning & Strategy</h3>
-              <p className="text-gray-700 mb-1">Our team defines the roadmap, features, architecture, and success metrics to guide the development.</p>
-              <p className="text-green-700 text-sm">✅ What we do: Project timeline, system design, tech stack selection</p>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-1">🔹 3. Design & Prototyping</h3>
-              <p className="text-gray-700 mb-1">We create wireframes, user flows, and UI mockups that align with your brand and user experience goals.</p>
-              <p className="text-green-700 text-sm">✅ What we do: UI/UX design, feedback iterations, user-centric design</p>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-1">🔹 4. Development & Integration</h3>
-              <p className="text-gray-700 mb-1">We build your solution using modern frameworks, integrating AI, APIs, and automation as needed.</p>
-              <p className="text-green-700 text-sm">✅ What we do: Agile development, system integration, regular testing</p>
-            </div>
-          </div>
-          <div>
-            <div className="mb-8">
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-1">🔹 5. Testing & Quality Assurance</h3>
-              <p className="text-gray-700 mb-1">Before launch, we rigorously test the product to ensure functionality, performance, and security.</p>
-              <p className="text-green-700 text-sm">✅ What we do: Functional testing, performance testing, bug fixing</p>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-1">🔹 6. Deployment & Training</h3>
-              <p className="text-gray-700 mb-1">We launch the system, set up hosting (if needed), and provide training to your team.</p>
-              <p className="text-green-700 text-sm">✅ What we do: Go-live support, onboarding sessions, documentation</p>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl font-bold flex items-center gap-2 mb-1">🔹 7. Maintenance & Support</h3>
-              <p className="text-gray-700 mb-1">Our partnership doesn’t stop at launch. We offer continuous monitoring, support, and feature updates.</p>
-              <p className="text-green-700 text-sm">✅ What we do: SLA-based support, updates, performance monitoring</p>
-            </div>
-          </div>
-        </div>
-        <div className="text-center mt-12">
-          <h3 className="text-2xl font-bold mb-2 text-blue-700">Let&apos;s Build the Future Together</h3>
-          <p className="text-md text-gray-700 mb-4 max-w-2xl mx-auto">No matter where you are in your digital journey, our team is ready to collaborate and create solutions that make a difference.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">📩 Get in Touch</a>
-            <a href="/consultation" className="bg-white border border-blue-700 text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Schedule a Free Consultation</a>
-          </div>
-        </div>
+
+        {/* Stepper */}
+        <Stepper />
       </section>
     </div>
   )
+}
+
+function Stepper() {
+  const steps = [
+    {
+      title: "Discovery & Consultation",
+      icon: "🔹 1.",
+      desc: "We start by understanding your business, challenges, and goals through in-depth consultations.",
+      detail: "✅ What we do: Needs assessment, stakeholder interviews, technical scoping",
+    },
+    {
+      title: "Planning & Strategy",
+      icon: "🔹 2.",
+      desc: "Our team defines the roadmap, features, architecture, and success metrics to guide the development.",
+      detail: "✅ What we do: Project timeline, system design, tech stack selection",
+    },
+    {
+      title: "Design & Prototyping",
+      icon: "🔹 3.",
+      desc: "We create wireframes, user flows, and UI mockups that align with your brand and user experience goals.",
+      detail: "✅ What we do: UI/UX design, feedback iterations, user-centric design",
+    },
+    {
+      title: "Development & Integration",
+      icon: "🔹 4.",
+      desc: "We build your solution using modern frameworks, integrating AI, APIs, and automation as needed.",
+      detail: "✅ What we do: Agile development, system integration, regular testing",
+    },
+    {
+      title: "Testing & Quality Assurance",
+      icon: "🔹 5.",
+      desc: "Before launch, we rigorously test the product to ensure functionality, performance, and security.",
+      detail: "✅ What we do: Functional testing, performance testing, bug fixing",
+    },
+    {
+      title: "Deployment & Training",
+      icon: "🔹 6.",
+      desc: "We launch the system, set up hosting (if needed), and provide training to your team.",
+      detail: "✅ What we do: Go-live support, onboarding sessions, documentation",
+    },
+    {
+      title: "Maintenance & Support",
+      icon: "🔹 7.",
+      desc: "Our partnership doesn’t stop at launch. We offer continuous monitoring, support, and feature updates.",
+      detail: "✅ What we do: SLA-based support, updates, performance monitoring",
+    },
+  ];
+  const [activeStep, setActiveStep] = React.useState(0);
+
+  return (
+    <div className="flex flex-col items-center">
+      {/* Step Indicator */}
+      <div className="flex flex-wrap justify-center gap-2 mb-8">
+        {steps.map((step, idx) => (
+          <button
+            key={idx}
+            className={`flex flex-col items-center px-2 focus:outline-none ${
+              idx === activeStep
+                ? "text-blue-700 font-bold"
+                : "text-gray-400"
+            }`}
+            onClick={() => setActiveStep(idx)}
+            aria-current={idx === activeStep ? "step" : undefined}
+          >
+            <span
+              className={`w-8 h-8 flex items-center justify-center rounded-full border-2 mb-1 ${
+                idx === activeStep
+                  ? "border-blue-700 bg-blue-100"
+                  : "border-gray-300 bg-white"
+              }`}
+            >
+              {idx + 1}
+            </span>
+            <span className="text-xs text-center max-w-[80px]">
+              {step.title.split(" ")[0]}
+            </span>
+          </button>
+        ))}
+      </div>
+      {/* Step Content */}
+      <div className="bg-gray-50 rounded-xl shadow p-6 max-w-xl w-full text-center mb-4">
+        <h3 className="text-xl font-bold flex items-center gap-2 mb-1 justify-center">
+          {steps[activeStep].icon} {steps[activeStep].title}
+        </h3>
+        <p className="text-gray-700 mb-1">{steps[activeStep].desc}</p>
+        <p className="text-green-700 text-sm">{steps[activeStep].detail}</p>
+      </div>
+      {/* Navigation */}
+      <div className="flex gap-4">
+        <button
+          className="px-4 py-2 rounded bg-gray-200 text-gray-700 font-semibold disabled:opacity-50"
+          onClick={() => setActiveStep((s) => Math.max(0, s - 1))}
+          disabled={activeStep === 0}
+        >
+          Previous
+        </button>
+        <button
+          className="px-4 py-2 rounded bg-blue-700 text-white font-semibold disabled:opacity-50"
+          onClick={() => setActiveStep((s) => Math.min(steps.length - 1, s + 1))}
+          disabled={activeStep === steps.length - 1}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  );
 }

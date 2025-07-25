@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function AstroSection() {
   return (
-    <section className="py-8 px-8 lg:py-20 bg-white">
+    <section className="py-8 px-8 lg:py-16 bg-white">
       <div className="container mx-auto">
         <div className="bg-blue-600 rounded-3xl overflow-hidden flex flex-col md:flex-row md:gap-8">
           <div className="py-20 px-14 md:w-7/12">

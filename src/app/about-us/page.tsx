@@ -121,7 +121,7 @@ export default function AboutUsPage() {
               <span className="font-medium text-gray-800">Educational institutions</span>
             </li>
             <li className="flex items-center gap-3 bg-blue-50 rounded-lg px-4 py-3 shadow-sm">
-              <span className="text-2xl">��</span>
+              <span className="text-2xl">🏢</span>
               <span className="font-medium text-gray-800">Private companies and SMEs</span>
             </li>
             <li className="flex items-center gap-3 bg-blue-50 rounded-lg px-4 py-3 shadow-sm">

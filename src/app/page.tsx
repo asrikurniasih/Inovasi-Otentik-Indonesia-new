@@ -31,7 +31,7 @@ export default function Home() {
       {/* <CodeSection /> */}
       <ProSection />
       <LogoSection />
-      <PagesSection />
+      {/* <PagesSection /> */}
       <GitHubSection />
       {/* <Footer /> */}
     </div>

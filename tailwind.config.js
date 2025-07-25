@@ -11,6 +11,10 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1600px',
+        '4xl': '2000px',
+      },
       colors: {
         blue: {
           DEFAULT: "#3066FF",
