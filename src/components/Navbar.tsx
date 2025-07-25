@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // Profile menu items
 // const profileMenuItems = [
@@ -203,7 +204,7 @@ export default function ComplexNavbar() {
           href="/"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium text-lg hover:text-blue-600 transition-colors"
         >
-          Inovasi Otentik Indonesia
+          <Image src="/logo-ioi/logo.png" alt="logo" width={150} height={100} />
         </Link>
         
         <div className="hidden lg:flex ml-auto">

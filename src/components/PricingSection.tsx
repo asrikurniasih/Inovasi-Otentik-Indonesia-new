@@ -37,7 +37,7 @@ export default function PricingSection() {
           </ul>
         </div>
         <div className="hidden lg:block">
-          <Image src="/aboutus.jpg" alt="SIAGA" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
+          <Image src="/product/SIAGA.png" alt="SIAGA" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
         </div>
       </section>
 
@@ -66,7 +66,7 @@ export default function PricingSection() {
           </ul>
         </div>
         <div className="order-1 lg:order-1 hidden lg:block">
-          <Image src="/components.png" alt="IOCX" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
+          <Image src="/product/IOCX.png" alt="IOCX" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
         </div>
       </section>
 
@@ -95,7 +95,7 @@ export default function PricingSection() {
           </ul>
         </div>
         <div className="hidden lg:block">
-          <Image src="/code.png" alt="IOCORE" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
+          <Image src="/product/IOCORE.png" alt="IOCORE" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
         </div>
       </section>
 
@@ -128,7 +128,7 @@ export default function PricingSection() {
           </ul>
         </div>
         <div className="order-1 lg:order-1 hidden lg:block">
-          <Image src="/palette.png" alt="DMS" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
+          <Image src="/product/DMS.png" alt="DMS" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
         </div>
       </section>
 
