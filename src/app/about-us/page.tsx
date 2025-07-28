@@ -1,10 +1,6 @@
 'use client'
 
-import { useState } from 'react'
 import Image from "next/image";
-import Footer from "@/components/Footer";
-import FeaturesSection from "@/components/FeaturesSection";
-import ProSection from "@/components/ProSection";
 
 export default function AboutUsPage() {
   return (

@@ -43,7 +43,7 @@ export default function FeaturesSection() {
             {features.map(({ icon, title, description }, index) => (
               <div key={title} className="group">
                 <div className="text-left p-6 rounded-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-lg">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4 leading-tight flex gap-4 justify-start" style={{ alignItems: index === 0 ? 'flex-start' : index === 1 ? 'flex-center' : index === 2 ? 'flex-start' : 'flex-center' }}>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4 leading-tight flex gap-4 justify-start" style={{ alignItems: index === 0 ? "flex-start" : index === 1 ? "flex-center" : index === 2 ? "flex-start" : "flex-center" }}>
                     {index === 0 ? (
                       <div className="w-[52px] h-[52px] min-w-[52px] min-h-[52px] bg-primary rounded-full flex items-center justify-center">
                         <svg 

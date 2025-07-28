@@ -13,18 +13,7 @@ import Image from "next/image";
 //   { label: "Sign Out", icon: "🚪" },
 // ];
 
-// Account menu items
-const accountItems = [
-  { title: "Login", href: "/login" },
-  { title: "Sign Up", href: "/signup" }
-];
 
-// Pages menu items
-const navListMenuItems = [
-  { title: "About Us", href: "/about" },
-  { title: "Landing Page", href: "/landing" },
-  { title: "404", href: "/404" },
-];
 
 // Solution menu items
 const solutionMenuItems = [
