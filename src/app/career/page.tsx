@@ -4,14 +4,14 @@ export default function CareerPage() {
   return (
     <div className="bg-white text-gray-900">
       <div className="container mx-auto px-4 pt-12 text-center gap-8 items-center mb-3">
-        <h1 className="text-4xl font-extrabold mb-4 text-blue-700 text-center">Build the Future With Us</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-black text-center">Build the Future <span className="text-primary">With Us</span></h1>
         <p className="mb-6 max-w-3xl text-lg mx-auto">
           We&apos;re a team of innovators, engineers, designers, and strategists who believe in building technology that makes a real impact. If you&apos;re passionate about solving problems, using AI, and creating meaningful digital products — we’d love to meet you.
         </p>
       </div>
       <section className="container mx-auto px-4 pb-16 grid lg:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-2xl font-bold mb-4 mt-8">Why Join Us?</h2>
+          <h2 className="text-2xl font-bold mb-4 mt-8">Why <span className="text-primary">Join Us?</span></h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white p-6 rounded-lg shadow text-center">
               <div className="text-3xl mb-2">🔍</div>

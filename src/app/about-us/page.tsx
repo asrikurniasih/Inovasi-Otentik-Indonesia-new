@@ -7,7 +7,7 @@ export default function AboutUsPage() {
     <div className="bg-white text-gray-900">
       <section className="container mx-auto px-4 pt-12 text-center gap-8 items-center">
         <div>
-          <h1 className="text-4xl font-extrabold mb-4 text-blue-700">Who We Are</h1>
+          <h1 className="text-4xl font-extrabold mb-4 text-black">Who <span className="text-primary">We Are</span></h1>
           <p className="mb-4 max-w-5xl mx-auto text-lg">
             PT Inovasi Otentik Indonesia is a technology company committed to delivering authentic and intelligent digital solutions tailored for governments, enterprises, and educational institutions. We believe that true innovation comes from understanding local challenges and solving them with the right mix of technology, strategy, and collaboration.
           </p>
@@ -25,15 +25,15 @@ export default function AboutUsPage() {
           <p className="mb-4 max-w-3xl">
             PT Inovasi Otentik Indonesia is a technology company committed to delivering authentic and intelligent digital solutions tailored for governments, enterprises, and educational institutions. We believe that true innovation comes from understanding local challenges and solving them with the right mix of technology, strategy, and collaboration.
           </p> */}
-          <h3 className="text-xl font-semibold mt-6 mb-1">Our Philosophy</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-1">Our <span className="text-primary">Philosophy</span></h3>
           <p className="mb-4 max-w-3xl">
             We don&apos;t just build systems - we create impact. Through AI-driven platforms, smart integrations, and scalable applications, we help organizations transform digitally while staying aligned with their goals and culture.
           </p>
-          <h3 className="text-xl font-semibold mt-6 mb-1">Our Vision</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-1">Our <span className="text-primary">Vision</span></h3>
           <p className="mb-4 max-w-3xl">
             To become a trusted technology partner that empowers Indonesia’s digital transformation through authentic and intelligent innovation.
           </p>
-          <h3 className="text-xl font-semibold mt-6 mb-1">Our Mission</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-1">Our <span className="text-primary">Mission</span></h3>
           <ul className="list-disc ml-6 mb-4 max-w-3xl">
             <li>Develop customized digital solutions rooted in local needs</li>
             <li>Provide integrated systems that enhance decision-making</li>
@@ -52,7 +52,7 @@ export default function AboutUsPage() {
           <Image src="/palette.png" alt="Values Palette" width={500} height={350} className="rounded-3xl object-cover w-full h-auto" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold mb-4">Our Values</h2>
+          <h2 className="text-2xl font-bold mb-4">Our <span className="text-primary">Values</span></h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow text-center">
               <div className="text-3xl mb-2">💡</div>
@@ -81,7 +81,7 @@ export default function AboutUsPage() {
       {/* Team Section */}
       <section className="container mx-auto px-4 py-10 grid lg:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-2xl font-bold mb-4">Our Team</h2>
+          <h2 className="text-2xl font-bold mb-4">Our <span className="text-primary">Team</span></h2>
           <p className="mb-4 max-w-3xl">
             Led by a diverse group of tech experts, data engineers, designers, and project managers, our team brings a mix of experience and enthusiasm to every project we work on.
           </p>
@@ -97,7 +97,7 @@ export default function AboutUsPage() {
           <Image src="/consistenly.png" alt="Our Team" width={500} height={350} className="rounded-3xl object-cover w-full h-auto" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold mb-4">Our Clients & Partners</h2>
+          <h2 className="text-2xl font-bold mb-4">Our <span className="text-primary">Clients & Partners</span></h2>
           <p className="mb-4 max-w-3xl">
             We proudly support digital transformation for a diverse range of organizations:
           </p>
@@ -108,19 +108,19 @@ export default function AboutUsPage() {
             <li>Non-profit and community organizations</li>
           </ul> */}
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
-            <li className="flex items-center gap-3 bg-blue-50 rounded-lg px-4 py-3 shadow-sm">
+            <li className="flex items-center gap-3 bg-primary-50 rounded-lg px-4 py-3 shadow-sm">
               <span className="text-2xl">🏛️</span>
               <span className="font-medium text-gray-800">Local and regional governments</span>
             </li>
-            <li className="flex items-center gap-3 bg-blue-50 rounded-lg px-4 py-3 shadow-sm">
+            <li className="flex items-center gap-3 bg-primary-50 rounded-lg px-4 py-3 shadow-sm">
               <span className="text-2xl">🎓</span>
               <span className="font-medium text-gray-800">Educational institutions</span>
             </li>
-            <li className="flex items-center gap-3 bg-blue-50 rounded-lg px-4 py-3 shadow-sm">
+            <li className="flex items-center gap-3 bg-primary-50 rounded-lg px-4 py-3 shadow-sm">
               <span className="text-2xl">🏢</span>
               <span className="font-medium text-gray-800">Private companies and SMEs</span>
             </li>
-            <li className="flex items-center gap-3 bg-blue-50 rounded-lg px-4 py-3 shadow-sm">
+            <li className="flex items-center gap-3 bg-primary-50 rounded-lg px-4 py-3 shadow-sm">
               <span className="text-2xl">🤝</span>
               <span className="font-medium text-gray-800">Non-profit and community organizations</span>
             </li>
@@ -155,18 +155,20 @@ export default function AboutUsPage() {
       </section> */}
 
       {/* Call to Action */}
-      <section className="container mx-auto px-4 py-12 text-center">
-        <h2 className="text-2xl font-bold mb-4">Let’s Work Together</h2>
-        <p className="mb-6 max-w-2xl mx-auto">
-          Whether you&apos;re just starting your digital journey or scaling up your infrastructure, we&apos;re here to help.
-        </p>
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <a href="mailto:hi@ioi.co.id">
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">📩 Get in Touch</button>
-          </a>
-          <a href="#">
-            <button className="bg-gray-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transition-colors">Start a Project</button>
-          </a>
+      <section className="bg-[#14626c]">
+        <div className="container mx-auto px-4 py-12 text-center">
+          <h2 className="text-2xl font-bold mb-4 text-white">Let’s Work Together</h2>
+          <p className="mb-6 max-w-5xl mx-auto text-white">
+            Whether you&apos;re just starting your digital journey or scaling up your infrastructure, we&apos;re here to help.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <a href="mailto:hi@ioi.co.id">
+              <button className="bg-white text-primary px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">📩 Get in Touch</button>
+            </a>
+            <a href="#">
+              <button className="bg-gray-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transition-colors">Start a Project</button>
+            </a>
+          </div>
         </div>
       </section>
 
