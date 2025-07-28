@@ -34,7 +34,7 @@ export default function FeaturesSection() {
               Our <span className="text-primary">Services</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              The world has become so fast paced that people don't want to stand by reading a page of info
+              The world has become so fast paced that people don&apos;t want to stand by reading a page of info
             </p>
           </div>
 
