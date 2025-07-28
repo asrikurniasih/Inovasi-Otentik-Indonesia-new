@@ -24,7 +24,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Open Sans', 'Noto Sans', system-ui, sans-serif;
+  /* font-family: 'Open Sans', 'Noto Sans', system-ui, sans-serif; */
+  font-family: Nunito, sans-serif !important;
   overflow-x: hidden;
 }
 
@@ -5059,6 +5060,12 @@ video {
 .peer:disabled:placeholder-shown ~ .peer-disabled\:peer-placeholder-shown\:text-blue-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(96 125 139 / var(--tw-text-opacity));
+}
+.text-primary {
+  color: #1b9aaa !important;
+}
+.bg-primary {
+  background-color: #1b9aaa !important;
 }
 
 

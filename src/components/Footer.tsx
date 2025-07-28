@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   const socialMedia = [
@@ -10,35 +11,19 @@ export default function Footer() {
     {
       title: "Company",
       links: [
-        { name: "About Us", link: "/about-us" },
-        { name: "Blog", link: "#" },
-        { name: "Github", link: "#" },
-        { name: "Free Product", link: "#" },
+        { name: "About Us", link: "/about-us" }
       ]
     },
     {
       title: "Help & Support",
       links: [
-        { name: "Knowledge Base", link: "#" },
-        { name: "Contact Us", link: "#" },
-        { name: "Premium Support", link: "#" },
-        { name: "Pricing", link: "/#pricing" },
+        { name: "Body Repairs", link: "#" }
       ]
     },
     {
-      title: "Resources",
+      title: "Contact",
       links: [
-        { name: "Dokumentasi", link: "#" },
-        { name: "Custom Development", link: "#" },
-        { name: "Discord", link: "#" },
-        { name: "Tailwind Components", link: "#" },
-      ]
-    },
-    {
-      title: "Technology",
-      links: [
-        { name: "React", link: "#" },
-        { name: "Astro", link: "#" },
+        { name: "Contact Us", link: "#" }
       ]
     }
   ]
@@ -48,7 +33,8 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-wrap">
           <div className="w-full md:w-4/12">
-            <h4 className="text-xl font-semibold text-black mb-2">
+            <Image src="/logo-ioi/logo.png" alt="IOI" width={350} height={350} className="rounded-3xl object-cover " />
+            <h4 className="text-xl font-semibold text-black mb-2 mt-4">
               PT Inovasi Otentik Indonesia
             </h4>
             <p className="text-md mt-0 mb-2 font-normal text-gray-600">

@@ -29,10 +29,10 @@ export default function Home() {
       {/* <DeveloperSection /> */}
       {/* <PaletteSection /> */}
       {/* <CodeSection /> */}
-      <ProSection />
-      <LogoSection />
+      {/* <ProSection /> */}
+      {/* <LogoSection /> */}
       {/* <PagesSection /> */}
-      <GitHubSection />
+      {/* <GitHubSection /> */}
       {/* <Footer /> */}
     </div>
   )

@@ -48,7 +48,7 @@ module.exports = withMT({
         },
       },
       fontFamily: {
-        'sans': ['Open Sans', 'Noto Sans', 'system-ui', 'sans-serif'],
+        'sans': ['Nunito', 'system-ui', 'sans-serif'],
         'mono': ['PT Mono', 'monospace'],
       },
     },
