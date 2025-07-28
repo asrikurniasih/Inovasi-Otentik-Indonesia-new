@@ -34,10 +34,10 @@ export default function Footer() {
         <div className="flex flex-wrap">
           <div className="w-full md:w-4/12">
             <Image src="/logo-ioi/logo.png" alt="IOI" width={350} height={350} className="rounded-3xl object-cover " />
-            <h4 className="text-xl font-semibold text-black mb-2 mt-4">
+            {/* <h4 className="text-xl font-semibold text-black mb-2 mt-4">
               PT Inovasi Otentik Indonesia
-            </h4>
-            <p className="text-md mt-0 mb-2 font-normal text-gray-600">
+            </h4> */}
+            <p className="text-md mt-0 mb-2 font-normal text-gray-600 mt-2">
               Jl. Abiyoso, Sidokerto, No. 28, Blok I <br />
               Daerah Istimewa Yogyakarta
             </p>
