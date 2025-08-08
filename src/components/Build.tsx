@@ -5,7 +5,7 @@ export default function Build() {
     <div className="bg-white text-black sm:my-[55px] my-10">
       <div className="text-[20px] lg:text-[40px] font-bold text-black text-center px-[74px]">
         <div>
-          Let's Build Something That Works — <span className="text-primary">Together</span>
+          Let&apos;s Build Something That Works — <span className="text-primary">Together</span>
         </div>
       </div>
 
@@ -15,7 +15,7 @@ export default function Build() {
 
 
       <div className='text-[18px] text-black font-[300] mt-[15px] text-center px-[74px] italic'>
-        Whether you're ready to launch or just exploring options, we're here to help turn your vision into a powerful digital solution.
+        Whether you&apos;re ready to launch or just exploring options, we&apos;re here to help turn your vision into a powerful digital solution.
       </div>
     </div>
   )

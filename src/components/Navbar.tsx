@@ -15,15 +15,7 @@ import Image from "next/image";
 
 
 
-// Solution menu items
-const solutionMenuItems = [
-  { title: "SIAGA", href: "#" },
-  { title: "IOCX", href: "#" },
-  { title: "IOCORE", href: "#" },
-  { title: "IOPeople", href: "#" },
-  { title: "Distribution Management System", href: "#" },
-  { title: "Nyuciin", href: "#" },
-];
+
 
 // function ProfileMenu() {
 //   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -68,63 +60,6 @@ const solutionMenuItems = [
 //     </div>
 //   );
 // }
-
-function DropdownMenu({ title, items, icon }: { title: string; items: Array<{ title: string; href: string }>; icon?: string }) {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  
-  // Close dropdown when clicking outside
-  React.useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      const dropdown = document.getElementById(`dropdown-menu-${title}`);
-      if (dropdown && !dropdown.contains(event.target as Node)) {
-        setIsMenuOpen(false);
-      }
-    }
-    if (isMenuOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isMenuOpen, title]);
-
-  return (
-    <div className="relative" id={`dropdown-menu-${title}`}> 
-      <button
-        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900"
-        onClick={() => setIsMenuOpen((open) => !open)}
-        type="button"
-      >
-        {icon && <span className="text-sm">{icon}</span>}
-        <span className="text-sm font-normal">{title}</span>
-        <svg
-          className={`h-3 w-3 transition-transform ${isMenuOpen ? "rotate-180" : ""}`}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      {isMenuOpen && (
-        <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border py-1 z-50">
-          {items.map((item) => (
-            <Link
-              key={item.title}
-              href={item.href}
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {item.title}
-            </Link>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
 
 function NavList() {
   return (

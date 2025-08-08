@@ -1,32 +1,6 @@
-import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Footer() {
-  const socialMedia = [
-    { icon: "fa-solid fa-envelope", link: "mailto:hi@ioi.co.id" },
-    { icon: "fa-solid fa-location-dot", link: "https://www.google.com/maps?q=-7.7512265,110.4490606" },
-  ]
-
-  const footerSections = [
-    {
-      title: "Company",
-      links: [
-        { name: "About Us", link: "/about-us" }
-      ]
-    },
-    {
-      title: "Help & Support",
-      links: [
-        { name: "Body Repairs", link: "#" }
-      ]
-    },
-    {
-      title: "Contact",
-      links: [
-        { name: "Contact Us", link: "#" }
-      ]
-    }
-  ]
 
   return (
     <footer className="relative z-40 bg-[#0D1B2A] px-6 sm:px-[74px] py-10 sm:py-[55px]">

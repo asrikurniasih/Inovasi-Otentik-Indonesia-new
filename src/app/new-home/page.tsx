@@ -313,7 +313,7 @@ function CTASection() {
           Ready to Transform Your Business?
         </h2>
         <p className="text-lg lg:text-xl opacity-90 mb-6 lg:mb-8 max-w-2xl mx-auto">
-          Let's discuss how our innovative solutions can help you achieve your business goals and drive growth.
+          Let&apos;s discuss how our innovative solutions can help you achieve your business goals and drive growth.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/service">
