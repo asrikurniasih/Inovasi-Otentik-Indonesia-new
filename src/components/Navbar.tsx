@@ -130,23 +130,28 @@ function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
       <Link
+        href="/work"
+        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
+      >
+        <span className="text-[15px] font-normal">Work</span>
+      </Link>
+      <Link
         href="/service"
         className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
       >
-        <span className="text-[16px] font-normal">Services</span>
+        <span className="text-[15px] font-normal">Services</span>
       </Link>
-      <DropdownMenu title="Solution" items={solutionMenuItems} />
+      <Link
+        href="/solution"
+        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
+      >
+        <span className="text-[15px] font-normal">Solution</span>
+      </Link>
       <Link
         href="/about-us"
         className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
       >
-        <span className="text-[16px] font-normal">About</span>
-      </Link>
-      <Link
-        href="/career"
-        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
-      >
-        <span className="text-[16px] font-normal">Career</span>
+        <span className="text-[15px] font-normal">About</span>
       </Link>
     </ul>
   );
@@ -188,12 +193,12 @@ export default function ComplexNavbar() {
         shouldShowBorder ? "border-b border-gray-300 shadow-lg" : "shadow-md"
       }`}
     >
-      <div className="relative mx-auto flex items-center text-blue-gray-900 container h-[80px]">
+      <div className="relative mx-auto flex items-center text-blue-gray-900 container h-[51px]">
         <Link
           href="/"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium text-lg hover:text-blue-600 transition-colors"
         >
-          <Image src="/logo-ioi/logo.png" alt="logo" width={250} height={100} className="h-[60px] w-auto" />
+          <Image src="/logo-ioi/logo.png" alt="logo" width={250} height={100} className="w-[238px] h-auto" />
         </Link>
         
         <div className="hidden lg:flex ml-auto">

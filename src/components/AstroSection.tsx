@@ -34,26 +34,37 @@ export default function AstroSection() {
     //   </div>
 
     // </section>
-    <section className="bg-[#14626c]">
-      <div className="container mx-auto px-5 py-16 lg:py-24 grid lg:grid-cols-5 gap-0 md:px-0 md:gap-4 items-center">
-        <div className="order-2 lg:order-2 lg:col-span-3 lg:-ml-10">
-          <p className="text-white font-bold mb-2 italic text-[16px] mb-4">
-            Technology Partnership
-          </p>
-          <h2 className="text-3xl lg:text-[48px] text-white mb-5 font-[700]" style={{ lineHeight: '1.25 !important' }}>
-            Why IOI People Is the Best Technology Partner?
-          </h2>
-          <p className="text-[18px] text-white lg:mr-10" style={{ lineHeight: '1.625 !important' }}>
-            We&apos;re not just a tech provider—we&apos;re your growth partner. Built by experienced professionals, our flexible and fully customizable systems deliver real business impact. With enterprise-level security, real-time insights, and genuine human support, we help you build a strong digital foundation for sustainable growth.
-          </p>
-          <a href="#">
-            <button className="border-2 border-black text-white bg-black px-4 rounded-lg font-medium hover:bg-black hover:text-white transition-colors mt-12 h-[32px] font-semibold text-xs">
-              GET STARTED
-            </button>
-          </a>
+    <section className="bg-white">
+      <div className="container mx-auto px-2 pb-4 pt-10 sm:px-[74px] sm:py-[55px] grid lg:grid-cols-5 gap-0 md:gap-4 items-center">
+        <div className="order-2 lg:order-2 lg:col-span-3">
+          <div className="text-[20px] lg:text-[40px] text-black mb-5 font-[700] text-center lg:text-right" style={{ lineHeight: '1.1 !important' }}>
+            Trusted by Industry Leaders Built to <span className="text-primary">Solve Real-World Challenges</span>
+
+            <div className="text-[15px] text-black mt-[25px] font-normal">
+              With over a decade of experience, we deliver scalable digital solutions that drive results for governments, enterprises, and institutions across Indonesia.
+            </div>
+          </div>
+          <div className="overflow-hidden w-full mt-[25px]">
+            <div className="flex gap-8 animate-marquee">
+              {/* <div className="mt-[25px] flex gap-[10px] justify-center lg:justify-end"> */}
+                <Image src="/pemda-klaten.png" alt="pemda-klaten" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/diskominfo.png" alt="diskominfo" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/Hamaparan.png" alt="Hamaparan" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/mitra-warung.png" alt="mitra-warung" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/pemda-klaten.png" alt="pemda-klaten" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/diskominfo.png" alt="diskominfo" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/Hamaparan.png" alt="Hamaparan" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/mitra-warung.png" alt="mitra-warung" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/pemda-klaten.png" alt="pemda-klaten" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/diskominfo.png" alt="diskominfo" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/Hamaparan.png" alt="Hamaparan" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+                <Image src="/mitra-warung.png" alt="mitra-warung" width={150} height={59} className="rounded-[10px] h-[59px] w-[150px] object-contain" />
+              {/* </div> */}
+            </div>
+          </div>
         </div>
-        <div className="order-1 lg:order-1 hidden lg:block lg:col-span-2">
-          <Image src="/why.png" alt="why-ioi" width={600} height={600} className="rounded-3xl h-[450px] w-[450px] object-cover" />
+        <div className="order-1 lg:order-1 lg:block lg:col-span-2 lg:pr-[50px] lg:h-[285px]">
+          <video src="/Trusted.mp4" autoPlay muted loop className="w-full h-full object-cover rounded-[10px]" />
         </div>
       </div>
     </section>

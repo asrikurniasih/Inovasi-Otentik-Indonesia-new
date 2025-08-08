@@ -5,6 +5,10 @@ import FeaturesSection from '@/components/FeaturesSection'
 import OurTeam from '@/components/ourTeam'
 import AstroSection from '@/components/AstroSection'
 import PricingSection from '@/components/PricingSection'
+import Solutions from '@/components/Solutions'
+import Build from '@/components/Build'
+import Ready from '@/components/Ready'
+import FloatingContactButton from '@/components/FloatingContactButton'
 
 // Main Page Component
 export default function Home() {
@@ -12,10 +16,25 @@ export default function Home() {
     <div className="min-h-screen">
       {/* <Navbar /> */}
       <HeroSection />
-      <AstroSection />
+      <div className="px-4 sm:px-0">
+        <AstroSection />
+        <OurTeam />
+        <FeaturesSection />
+        <Solutions />
+        <PricingSection />
+      </div>
+      <Build />
+      <div className="px-4 sm:px-0">
+        <Ready />
+      </div>
+      {/* <AstroSection />
       <OurTeam />
       <FeaturesSection />
+      <Solutions />
       <PricingSection />
+      <Build />
+      <Ready /> */}
+      <FloatingContactButton />
       {/* <DeveloperSection /> */}
       {/* <PaletteSection /> */}
       {/* <CodeSection /> */}

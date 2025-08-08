@@ -4,9 +4,9 @@ export default function LogoSection() {
   const logos = ['openai', 'anthropic', 'aws', 'azure', 'pinecone', 'relevance', 'n8n']
 
   return (
-    <section className="py-6 px-8 lg:py-12 bg-white">
+    <section className="px-2 pb-10 sm:px-[74px] sm:mb-[10px] bg-white">
       <div className="container mx-auto text-center">
-        <p className="text-[40px] font-[900] mb-8 text-gray-900">
+        <p className="text-[20px] lg:text-[40px] font-[900] mb-6 text-gray-900">
           Tech we <span className="text-primary">Work With</span>
         </p>
         <div className="overflow-hidden w-full">
