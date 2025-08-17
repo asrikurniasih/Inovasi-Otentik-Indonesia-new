@@ -50,7 +50,7 @@ export default function PricingSection() {
 
       <section className="container mx-auto sm:px-4 py-16 grid lg:grid-cols-2 gap-8 items-start">
         <div className="order-2 lg:order-2">
-          <Image src="/logo-siaga.png" alt="Logo Siaga" width={200} height={79} className="rounded-3xl object-cover sm:w-[200px] h-auto w-[130px]" />
+          {/* <Image src="/logo-siaga.png" alt="Logo Siaga" width={200} height={79} className="rounded-3xl object-cover sm:w-[200px] h-auto w-[130px]" /> */}
 
           <div className="font-bold mb-[25px] lg:text-[24px] text-[18px] mt-[15px]">Data Integration & Automation Engine</div>
           <p className="mb-4 font-[300] text-[18px]">
@@ -65,7 +65,7 @@ export default function PricingSection() {
         </div>
       </section>
 
-      <section className="container mx-auto sm:px-4 py-16 grid lg:grid-cols-2 gap-8 items-start">
+      {/* <section className="container mx-auto sm:px-4 py-16 grid lg:grid-cols-2 gap-8 items-start">
         <div className="order-2 lg:order-1">
           <Image src="/iocx.png" alt="Logo Omnichannel" width={150} height={79} className="rounded-3xl object-cover w-[80px] sm:w-[150px] h-auto" />
 
@@ -77,10 +77,10 @@ export default function PricingSection() {
         <div className="order-1 lg:order-1 lg:block">
           <Image src="/page-Omnichannel.png" alt="Page Omnichannel" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
         </div>
-      </section>
+      </section> */}
 
       <section className="container mx-auto sm:px-4 py-16 grid lg:grid-cols-2 gap-8 items-start">
-        <div className="order-2 lg:order-2">
+        <div className="order-2 lg:order-1">
           <Image src="/logo-Human.png" alt="Logo Humanx" width={200} height={79} className="rounded-3xl object-cover sm:w-[200px] h-auto w-[130px]" />
 
           <div className="font-bold mb-[25px] lg:text-[24px] text-[18px] mt-[15px]">Smart Human Resource Management</div>
@@ -91,7 +91,7 @@ export default function PricingSection() {
             Optimized for companies looking to digitize and simplify workforce management.
           </p>
         </div>
-        <div className="order-1 lg:order-1 lg:block">
+        <div className="order-1 lg:order-2 lg:block">
           <Image src="/page-Human.png" alt="Page Humanx" width={600} height={400} className="rounded-3xl object-cover w-full h-auto" />
         </div>
       </section>

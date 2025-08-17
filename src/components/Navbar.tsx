@@ -61,6 +61,77 @@ import Image from "next/image";
 //   );
 // }
 
+function DigitalProductDropdown() {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const dropdownRef = React.useRef<HTMLDivElement>(null);
+  
+  const menuItems = [
+    { label: "Web", href: "/web-development" },
+    { label: "Mobile", href: "/mobile" },
+    { label: "AI", href: "/ai" },
+    { label: "Custom Software", href: "/software" },
+    { label: "Data Integration", href: "/data-integration" },
+    { label: "API", href: "/api" },
+    { label: "Siaga", href: "/siaga" },
+    { label: "IOCX", href: "/iocx" },
+    { label: "Nexora", href: "/nexora" },
+    { label: "Humax", href: "/humax" },
+  ];
+
+  // Close dropdown when clicking outside
+  React.useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div className="relative" ref={dropdownRef}>
+      <button
+        type="button"
+        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className="text-[15px] font-normal">Digital Product</span>
+        <svg
+          className={`h-3 w-3 transition-transform ${isOpen ? "rotate-180" : ""}`}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      
+      {isOpen && (
+        <div 
+          className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border py-1 z-[9999]"
+        >
+          {menuItems.map((item, index) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className={`block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm transition-colors ${
+                index === menuItems.length - 1 ? "border-t border-gray-100" : ""
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
@@ -82,6 +153,7 @@ function NavList() {
       >
         <span className="text-[15px] font-normal">Solution</span>
       </Link>
+      <DigitalProductDropdown />
       <Link
         href="/about-us"
         className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
@@ -124,14 +196,14 @@ export default function ComplexNavbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-10 mx-auto max-full p-2 lg:pl-6 mt-0 transition-shadow bg-white rounded-0 ${
+      className={`sticky top-0 z-10 mx-auto max-full px-6 sm:px-[74px] py-2 mt-0 transition-shadow bg-white rounded-0 ${
         shouldShowBorder ? "border-b border-gray-300 shadow-lg" : "shadow-md"
       }`}
     >
       <div className="relative mx-auto flex items-center text-blue-gray-900 container h-[51px]">
         <Link
           href="/"
-          className="mr-4 ml-2 cursor-pointer py-1.5 font-medium text-lg hover:text-blue-600 transition-colors"
+          className="mr-4 cursor-pointer py-1.5 font-medium text-lg hover:text-blue-600 transition-colors"
         >
           <Image src="/logo-ioi/logo.png" alt="logo" width={250} height={100} className="w-[238px] h-auto" />
         </Link>

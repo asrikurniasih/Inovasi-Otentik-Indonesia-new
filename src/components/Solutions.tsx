@@ -10,7 +10,7 @@ export default function Solutions() {
             <div>
               Smart Solutions,<span className="text-primary">Built for Real Progress</span>
             </div>
-            <div className="text-[15px] text-black font-normal mt-[15px] text-center">
+            <div className="text-[18px] text-black font-normal mt-[18px] text-center">
               We deliver intelligent digital solutions that empower organizations to operate more efficiently, make smarter decisions, and scale sustainably. Whether you’re looking to automate operations, enhance user experience, or harness the power of AI  IOI is your trusted partner.
             </div>
           </div>
@@ -27,7 +27,7 @@ export default function Solutions() {
                   </div>
                 </div>
 
-                <div className="mt-[40px] text-[11.25px] text-black font-normal px-[29px] pb-[42px] h-[127px]">
+                <div className="mt-[40px] text-[14px] text-black font-normal px-[29px] pb-[42px] h-[127px]">
                   We design and build web and mobile applications that align with your operations and business objectives.
                 </div>
               </div>
@@ -44,7 +44,7 @@ export default function Solutions() {
                   </div>
                 </div>
 
-                <div className="mt-[40px] text-[11.25px] text-black font-normal px-[29px] pb-[42px] h-[127px]">
+                <div className="mt-[40px] text-[14px] text-black font-normal px-[29px] pb-[42px] h-[127px]">
                   Intelligent systems that streamline workflows, enhance productivity, and support data-driven decision-making.
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function Solutions() {
                   </div>
                 </div>
 
-                <div className="mt-[40px] text-[11.25px] text-black font-normal px-[29px] pb-[42px] h-[127px]">
+                <div className="mt-[40px] text-[14px] text-black font-normal px-[29px] pb-[42px] h-[127px]">
                   Connect and synchronize your systems in real time to improve efficiency and reduce manual processes.
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function Solutions() {
                   </div>
                 </div>
 
-                <div className="mt-[40px] text-[11.25px] text-black font-normal px-[29px] pb-[42px] h-[127px]">
+                <div className="mt-[40px] text-[14px] text-black font-normal px-[29px] pb-[42px] h-[127px]">
                   We build and connect intelligent IoT ecosystems from smart sensors and gateways to cloud platforms helping you monitor, automate, and optimize operations in real time.
                 </div>
               </div>

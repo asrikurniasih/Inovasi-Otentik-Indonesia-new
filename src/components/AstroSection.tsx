@@ -34,8 +34,8 @@ export default function AstroSection() {
     //   </div>
 
     // </section>
-    <section className="bg-white">
-      <div className="container mx-auto px-2 pb-4 pt-10 sm:px-[74px] sm:py-[55px] grid lg:grid-cols-5 gap-0 md:gap-4 items-center">
+    <section className="px-2 pb-4 pt-10 sm:px-[74px] sm:py-[55px] bg-white">
+      <div className="container mx-auto grid lg:grid-cols-5 gap-0 md:gap-4 items-center">
         <div className="order-2 lg:order-2 lg:col-span-3">
           <div className="text-[20px] lg:text-[40px] text-black mb-5 font-[700] text-center lg:text-right" style={{ lineHeight: '1.1 !important' }}>
             Trusted by Industry Leaders Built to <span className="text-primary">Solve Real-World Challenges</span>
