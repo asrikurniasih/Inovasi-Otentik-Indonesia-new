@@ -112,7 +112,7 @@ function DigitalProductDropdown() {
       
       {isOpen && (
         <div 
-          className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border py-1 z-[9999]"
+          className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border py-1 z-40"
         >
           {menuItems.map((item, index) => (
             <Link

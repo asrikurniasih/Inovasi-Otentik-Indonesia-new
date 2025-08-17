@@ -61,57 +61,130 @@ export default function RequestProjectPage() {
         </section>
 
         {/* How It Works Section */}
-        <section className="mx-auto sm:py-[55px] px-2 sm:px-[74px] py-10 sm:my-[55px] my-10">
-          <h2 className="text-[30px] sm:text-[40px] font-bold text-center text-gray-900 mb-16">
+
+        <section className="mx-auto sm:pt-[55px] pt-10 rounded-[20px]">
+          <div className="md:text-[40px] text-[30px] font-bold mb-[15px] text-black text-center">
             How It Works
-          </h2>
+          </div>
           
-          <div className="relative">
-            {/* Connection Line */}
-            <div className="hidden lg:block absolute top-8 left-0 right-0 h-0.5 bg-gray-200"></div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4">
-              {[
-                {
-                  step: 1,
-                  title: "Submit Your Project Request",
-                  description: "Fill out our online form or contact our team directly."
-                },
-                {
-                  step: 2,
-                  title: "Initial Consultation",
-                  description: "We&apos;ll discuss your goals, challenges, and requirements."
-                },
-                {
-                  step: 3,
-                  title: "Proposal & Timeline",
-                  description: "Receive a detailed plan, cost estimate, and delivery schedule."
-                },
-                {
-                  step: 4,
-                  title: "Project Kick-Off",
-                  description: "Begin development with clear milestones and regular updates."
-                },
-                {
-                  step: 5,
-                  title: "Launch & Support",
-                  description: "Deploy your solution and provide ongoing maintenance if needed."
-                }
-              ].map((item, index) => (
-                <div key={index} className="text-center relative">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
-                    <span className="text-white font-bold text-xl">{item.step}</span>
+          <div className="mt-12">
+            <div className="relative sm:h-[385px] flex flex-col justify-center hidden xl:flex">
+              {/* Timeline Line */}
+              <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-black hidden sm:block transform -translate-y-1/2"></div>
+              
+              <div className="grid sm:grid-cols-5 grid-cols-1 gap-4 sm:gap-8 items-center">
+                {/* Step 1 - Content Above, Number on Line */}
+                <div className="relative text-center">
+                  <div className="mb-1 -mt-[125px] h-[120px]">
+                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2 h-[48px]">Submit Your Request</div>
+                    <div className="text-[14px] text-gray-700">Fill out our online form or contact our team directly.</div>
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2 text-[16px]">{item.title}</h3>
-                  <p className="text-gray-600 text-[14px]">{item.description}</p>
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto relative z-2">
+                      1
+                    </div>
                 </div>
-              ))}
+                
+                {/* Step 2 - Number on Line, Content Below */}
+                <div className="relative text-center w-[175px]">
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto mb-1 relative z-2 mt-[7.5rem]">
+                    2
+                  </div>
+                  <div>
+                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Initial Consultation</div>
+                    <div className="text-[14px] text-gray-700">We&apos;ll discuss your goals, challenges, and requirements.</div>
+                  </div>
+                </div>
+                
+                {/* Step 3 - Content Above, Number on Line */}
+                <div className="relative text-center">
+                  <div className="mb-1 -mt-[125px] h-[120px]">
+                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2 h-[48px]">Proposal & Timeline</div>
+                    <div className="text-[14px] text-gray-700">Receive a detailed plan, cost estimate, and delivery schedule.</div>
+                  </div>
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto relative z-2">
+                      3
+                    </div>
+                </div>
+                
+                {/* Step 4 - Number on Line, Content Below */}
+                <div className="relative text-center">
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto mb-1 relative z-2 mt-[4.5rem]">
+                    4
+                  </div>
+                  <div>
+                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Project Kick-Off</div>
+                    <div className="text-[14px] text-gray-700">Begin development with clear milestones and regular updates.</div>
+                  </div>
+                </div>
+                
+                {/* Step 5 - Content Above, Number on Line */}
+                <div className="relative text-center">
+                  <div className="mb-1 -mt-[125px] h-[120px]">
+                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2 h-[48px]">Launch & Support</div>
+                    <div className="text-[14px] text-gray-700">Deploy your solution and provide ongoing maintenance if needed.</div>
+                  </div>
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto relative z-2">
+                      5
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative xl:hidden">
+              <div className="bg-transparent rounded-lg">
+                
+                <div className="relative">
+                  <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-black/25"></div>
+                  
+                  <div className="space-y-8">
+                    <div className="flex items-start gap-5">
+                      <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Submit Your Request</div>
+                        <div className="text-[14px] text-gray-700">Fill out our online form or contact our team directly.</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-6">
+                    <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Initial Consultation</div>
+                        <div className="text-[14px] text-gray-700">We&apos;ll discuss your goals, challenges, and requirements.</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-6">
+                    <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Proposal & Timeline</div>
+                        <div className="text-[14px] text-gray-700">Receive a detailed plan, cost estimate, and delivery schedule.</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-6">
+                    <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Project Kick-Off</div>
+                        <div className="text-[14px] text-gray-700">Begin development with clear milestones and regular updates.</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-6">
+                    <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Launch & Support</div>
+                        <div className="text-[14px] text-gray-700">Deploy your solution and provide ongoing maintenance if needed.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Contact Form Section */}
-        <section className="mx-auto sm:py-[55px] py-10 sm:my-[55px] my-10 rounded-[20px] bg-white">
+        <section className="mx-auto sm:py-[55px] py-10 rounded-[20px] bg-white">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="flex flex-col justify-center h-full">
               <div className="text-[30px] sm:text-[40px] font-bold text-gray-900" style={{lineHeight: '1 !important'}}>

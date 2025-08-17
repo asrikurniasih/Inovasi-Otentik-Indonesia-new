@@ -148,31 +148,31 @@ export default function SoftwarePage() {
         </section>
 
         {/* How We Build Your Software Section */}
-        <section className="mx-auto sm:py-[55px] px-2 sm:px-[74px] py-10 rounded-[20px] mb-[55px]" style={{ boxShadow: '0px 2px 6px 0px rgba(27, 153, 170, 0.15)' }}>
+        <section className="mx-auto sm:py-[55px] py-10 rounded-[20px] mb-[55px]">
           <div className="md:text-[40px] text-[30px] font-bold mb-[15px] text-black text-center">
             How We Build Your Software:
           </div>
           
           <div className="mt-12">
-            <div className="relative">
+            <div className="relative sm:h-[385px] flex flex-col justify-center hidden xl:flex">
               {/* Timeline Line */}
-              <div className="absolute top-8 left-0 right-0 h-0.5 bg-gray-300 hidden sm:block"></div>
+              <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-black hidden sm:block transform -translate-y-1/2"></div>
               
-              <div className="grid sm:grid-cols-5 grid-cols-1 gap-4 sm:gap-8">
-                {/* Step 1 */}
+              <div className="grid sm:grid-cols-5 grid-cols-1 gap-4 sm:gap-8 items-center">
+                {/* Step 1 - Content Above, Number on Line */}
                 <div className="relative text-center">
-                  <div className="mb-16">
-                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Requirement Analysis</div>
+                  <div className="mb-1 -mt-[125px] h-[120px]">
+                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2 h-[48px]">Requirement Analysis</div>
                     <div className="text-[14px] text-gray-700">Deep dive into your goals and workflows.</div>
                   </div>
-                  <div className="w-16 h-16 bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto relative z-10 border-2 border-white">
-                    1
-                  </div>
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto relative z-2">
+                      1
+                    </div>
                 </div>
                 
-                {/* Step 2 */}
-                <div className="relative text-center">
-                  <div className="w-16 h-16 bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-16 relative z-10 border-2 border-white">
+                {/* Step 2 - Number on Line, Content Below */}
+                <div className="relative text-center w-[175px]">
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto mb-1 relative z-2 mt-[7.5rem]">
                     2
                   </div>
                   <div>
@@ -181,20 +181,20 @@ export default function SoftwarePage() {
                   </div>
                 </div>
                 
-                {/* Step 3 */}
+                {/* Step 3 - Content Above, Number on Line */}
                 <div className="relative text-center">
-                  <div className="mb-16">
-                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Development & Integration</div>
+                  <div className="mb-1 -mt-[125px] h-[120px]">
+                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2 h-[48px]">Development & Integration</div>
                     <div className="text-[14px] text-gray-700">Custom coding and connecting with existing systems.</div>
                   </div>
-                  <div className="w-16 h-16 bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto relative z-10 border-2 border-white">
-                    3
-                  </div>
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto relative z-2">
+                      3
+                    </div>
                 </div>
                 
-                {/* Step 4 */}
+                {/* Step 4 - Number on Line, Content Below */}
                 <div className="relative text-center">
-                  <div className="w-16 h-16 bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-16 relative z-10 border-2 border-white">
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto mb-1 relative z-2 mt-[4.5rem]">
                     4
                   </div>
                   <div>
@@ -203,14 +203,65 @@ export default function SoftwarePage() {
                   </div>
                 </div>
                 
-                {/* Step 5 */}
+                {/* Step 5 - Content Above, Number on Line */}
                 <div className="relative text-center">
-                  <div className="mb-16">
-                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Deployment & Maintenance</div>
+                  <div className="mb-1 -mt-[125px] h-[120px]">
+                    <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2 h-[48px]">Deployment & Maintenance</div>
                     <div className="text-[14px] text-gray-700">Smooth launch with ongoing updates.</div>
                   </div>
-                  <div className="w-16 h-16 bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto relative z-10 border-2 border-white">
-                    5
+                  <div className="w-[26px] h-[26px] bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto relative z-2">
+                      5
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative xl:hidden">
+              <div className="bg-transparent rounded-lg">
+                
+                <div className="relative">
+                  <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-black/25"></div>
+                  
+                  <div className="space-y-8">
+                    <div className="flex items-start gap-5">
+                      <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Requirement Analysis</div>
+                        <div className="text-[14px] text-gray-700">Deep dive into your goals and workflows.</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-6">
+                    <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">System Architecture & UI/UX Design</div>
+                        <div className="text-[14px] text-gray-700">Create blueprint and intuitive interface.</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-6">
+                    <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Development & Integration</div>
+                        <div className="text-[14px] text-gray-700">Custom coding and connecting with existing systems.</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-6">
+                    <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Testing & Quality Assurance</div>
+                        <div className="text-[14px] text-gray-700">Ensure performance, security, and usability.</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-6">
+                    <div className="w-3 h-3 bg-black rounded-full text-center mt-[2.5rem] flex-shrink-0 relative z-2 left-[11px]"></div>
+                      <div className="bg-white p-4 rounded-lg border text-center border-gray-200 flex-1">
+                        <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Deployment & Maintenance</div>
+                        <div className="text-[14px] text-gray-700">Smooth launch with ongoing updates.</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
