@@ -29,7 +29,7 @@ export default function AboutUsPage() {
           </div>
 
           <div className="text-[16px] line-height-[20px]">
-            We don't just build systems, we create impact. Through AI-driven platforms, smart integrations, and scalable applications, we help organizations transform digitally while staying aligned with their goals and culture.
+            We don&apos;t just build systems, we create impact. Through AI-driven platforms, smart integrations, and scalable applications, we help organizations transform digitally while staying aligned with their goals and culture.
           </div>
         </section>
 

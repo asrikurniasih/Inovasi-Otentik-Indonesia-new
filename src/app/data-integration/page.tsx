@@ -21,7 +21,7 @@ export default function DataIntegrationPage() {
                   Discuss Your Data Project
                 </button>
                 <p className="text-gray-600 text-sm">
-                  Let's discuss your data integration needs with our experts.
+                  Let&apos;s discuss your data integration needs with our experts.
                 </p>
               </div>
             </div>

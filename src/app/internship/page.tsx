@@ -1,35 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+
 import Image from 'next/image';
-import { motion } from "framer-motion";
+
 
 export default function RequestProjectPage() {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    companyName: '',
-    email: '',
-    phone: '',
-    projectCategory: '',
-    projectDescription: '',
-    budgetRange: '',
-    preferredTimeline: '',
-    additionalNotes: ''
-  });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-  };
+
 
   return (
     <section className="px-2 sm:px-[74px] bg-white text-black">

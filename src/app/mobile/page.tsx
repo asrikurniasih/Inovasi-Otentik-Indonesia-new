@@ -157,7 +157,7 @@ export default function MobileDevelopmentPage() {
                 <div className="relative text-center">
                   <div className="mb-16">
                     <div className="text-[#1B9AAA] font-semibold text-[16px] mb-2">Discovery & Planning</div>
-                    <div className="text-[14px] text-gray-700">Define the app's purpose, audience, and required features.</div>
+                    <div className="text-[14px] text-gray-700">Define the app&apos;s purpose, audience, and required features.</div>
                   </div>
                   <div className="w-16 h-16 bg-[#1B9AAA] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto relative z-10">
                     1
@@ -215,7 +215,7 @@ export default function MobileDevelopmentPage() {
         {/* CTA Section */}
         <section className="bg-white text-black sm:my-[55px] my-10 text-center">
           <div className="md:text-[40px] text-[30px] font-bold mb-[15px] text-black">
-            Let's Create Your Next Mobile Success Story
+            Let&apos;s Create Your Next Mobile Success Story
           </div>
           <p className="text-[16px] text-gray-700 mb-8 max-w-2xl mx-auto">
             From startups to enterprises, we deliver mobile solutions that empower growth.

@@ -156,7 +156,7 @@ export default function SupportPage() {
                 <div className="md:text-[35px] text-[30px] font-bold mb-4 text-black leading-[1.2]">
                 We Are Here to <span className="text-primary">Help</span>
                 </div>
-                <p className="text-[16px] text-gray-700">Let us know what's troubling you—our support team is ready to assist with clarity, speed, and care.</p>
+                <p className="text-[16px] text-gray-700">Let us know what&apos;s troubling you—our support team is ready to assist with clarity, speed, and care.</p>
               </div>
             </div>
 

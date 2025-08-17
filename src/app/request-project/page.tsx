@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
-import { motion } from "framer-motion";
+
 
 export default function RequestProjectPage() {
   const [formData, setFormData] = useState({
@@ -40,11 +39,11 @@ export default function RequestProjectPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h1 className="text-[30px] md:text-[40px] lg:text-[50px] font-bold text-gray-900 leading-tight">
-                  Let's Build <span className="text-primary">Your Next</span> {' '}
+                  Let&apos;s Build <span className="text-primary">Your Next</span> {' '}
                   <span className="text-primary">Big Project</span> Together
                 </h1>
                 <p className="text-[16px] text-gray-700 leading-relaxed">
-                  Whether you need a custom software solution, a smart automation system, or an end-to-end digital transformation, our team is ready to bring your vision to life. Tell us about your project and we'll get back to you with the right approach.
+                  Whether you need a custom software solution, a smart automation system, or an end-to-end digital transformation, our team is ready to bring your vision to life. Tell us about your project and we&apos;ll get back to you with the right approach.
                 </p>
               </div>
             </div>
@@ -81,7 +80,7 @@ export default function RequestProjectPage() {
                 {
                   step: 2,
                   title: "Initial Consultation",
-                  description: "We'll discuss your goals, challenges, and requirements."
+                  description: "We&apos;ll discuss your goals, challenges, and requirements."
                 },
                 {
                   step: 3,
@@ -119,7 +118,7 @@ export default function RequestProjectPage() {
                 What We Need <br />from <span className="text-primary">You</span>
               </div>
               <p className="text-[16px] text-gray-700 mt-2">
-                Let's work together to create solutions that make a real difference.
+                Let&apos;s work together to create solutions that make a real difference.
               </p>
             </div>
             
@@ -319,7 +318,7 @@ export default function RequestProjectPage() {
               Your Idea, <span className="text-primary">Our Expertise</span>
             </h2>
             <p className="text-[16px] text-gray-700">
-              Let's turn your concept into a working solution that drives results.
+              Let&apos;s turn your concept into a working solution that drives results.
             </p>
           </div>
         </section>

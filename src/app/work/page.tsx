@@ -17,7 +17,7 @@ export default function WorkPage() {
                 Our <span className="text-primary">Work</span> Speaks for Itself
               </div>
               <p className="mb-[30px] xl:text-[16px] text-[14px] lg:ml-5 ml-0">
-                From government platforms to enterprise automation, our projects are built to deliver measurable impact and long-term value. Explore some of the solutions we've created for our clients.
+                From government platforms to enterprise automation, our projects are built to deliver measurable impact and long-term value. Explore some of the solutions we&apos;ve created for our clients.
               </p>
               <button className="bg-primary text-white px-[15px] py-3 rounded-[7px] font-semibold hover:bg-white hover:text-primary transition-colors h-[50px] xl:text-[16px] text-[14px]">
                 Start Your Project With Us
@@ -58,7 +58,7 @@ export default function WorkPage() {
             <div className="text-center sm:w-[280px] w-full sm:mx-auto mx-0">
               <div className="w-2 h-2 bg-black rounded-full mx-auto mb-3"></div>
               <div className="text-[16px] font-semibold my-[15px] text-primary">Custom-Fit Solutions</div>
-              <div className="text-[16px] text-gray-600 text-balance">Each project is designed to match the client's exact needs.</div>
+              <div className="text-[16px] text-gray-600 text-balance">Each project is designed to match the client&apos;s exact needs.</div>
             </div>
             <div className="text-center sm:w-[280px] w-full sm:mx-auto mx-0">
               <div className="w-2 h-2 bg-black rounded-full mx-auto mb-3"></div>
@@ -163,7 +163,7 @@ export default function WorkPage() {
               </div>
 
               <div className="xl:text-[16px] text-[14px] text-black font-[300] mt-4">
-                Let's work together to create solutions that make a real difference.
+                Let&apos;s work together to create solutions that make a real difference.
               </div>
             </div>
             <div className="c">

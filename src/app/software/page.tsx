@@ -224,7 +224,7 @@ export default function SoftwarePage() {
             Your Business Deserves More Than a Generic Solution
           </div>
           <p className="text-[16px] text-gray-700 mb-8">
-            Let's build it together.
+            Let&apos;s build it together.
           </p>
           <div className="flex justify-center">
             <button className="bg-[#1B9AAA] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#158a9a] transition-colors shadow-md">

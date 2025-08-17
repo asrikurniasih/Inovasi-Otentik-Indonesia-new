@@ -10,7 +10,7 @@ export default function PartnershipPage() {
         <section className="mx-auto pt-[55px] flex flex-col lg:flex-row xl:gap-16 gap-8 items-center">
           <div className="flex-1">
             <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-black">
-              Let's Grow Together Through <span className="text-primary">Strategic Partnerships</span>
+              Let&apos;s Grow Together Through <span className="text-primary">Strategic Partnerships</span>
             </div>
             <p className="mb-[30px] text-[16px] text-gray-700">
               At IOI, we believe that collaboration drives innovation. We work with technology providers, system integrators, resellers, and industry specialists to deliver smarter solutions for businesses, governments, and communities.
@@ -100,7 +100,7 @@ export default function PartnershipPage() {
                 <tr className="bg-gray-50">
                   <td className="p-4 border font-semibold bg-[#1B9AAA]/25">Branding</td>
                   <td className="p-4 border">IOI branding</td>
-                  <td className="p-4 border">Partner's own branding (powered by IOI tech)</td>
+                  <td className="p-4 border">Partner&apos;s own branding (powered by IOI tech)</td>
                   <td className="p-4 border">Joint branding or integration</td>
                   <td className="p-4 border">IOI branding (with customization)</td>
                 </tr>
@@ -135,7 +135,7 @@ export default function PartnershipPage() {
                 <tr className="bg-white">
                   <td className="p-4 border font-semibold bg-[#1B9AAA]/25">Revenue Model</td>
                   <td className="p-4 border">Margin per Sale</td>
-                  <td className="p-4 border">License fee + Partner's selling price</td>
+                  <td className="p-4 border">License fee + Partner&apos;s selling price</td>
                   <td className="p-4 border">Shared revenue or project-based</td>
                   <td className="p-4 border">Implementation service fees + margin</td>
                 </tr>
@@ -259,7 +259,7 @@ export default function PartnershipPage() {
             {/* Left Section - Text Content */}
             <div className="flex flex-col justify-center h-full">
               <div className="md:text-[35px] text-[30px] font-bold mb-4 text-black leading-[1.2]">
-                Let's Build a Stronger Digital Ecosystem <span className="text-primary">Together</span>
+                Let&apos;s Build a Stronger Digital Ecosystem <span className="text-primary">Together</span>
               </div>
               <p className="text-[16px] text-gray-700">Join our growing network of partners and unlock new opportunities.</p>
             </div>
