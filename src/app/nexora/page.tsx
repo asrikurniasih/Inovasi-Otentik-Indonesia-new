@@ -17,7 +17,7 @@ export default function NexoraPage() {
                 Unify Your Data. Automate Your Operations. Accelerate Your Decisions.
               </div>
               <p className="mb-[30px] text-[16px] text-gray-700">
-                NEXORA is our Data Integration & Automation Engine that connects multiple data sources, streamlines workflows, and delivers real-time insights helping organizations make faster, smarter, and more accurate decisions.
+              <span className="font-bold">NEXORA</span> is our Data Integration & Automation Engine that connects multiple data sources, streamlines workflows, and delivers real-time insights helping organizations make faster, smarter, and more accurate decisions.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6 justify-center sm:justify-end">
                 <p className="text-gray-600 text-sm">

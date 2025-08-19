@@ -19,8 +19,8 @@ export default function IOCXPage() {
               <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-primary text-center sm:text-right leading-[1.2]">
                 One Platform for Every Customer Interaction
               </div>
-              <p className="mb-[30px] text-[16px] text-gray-700 text-center sm:text-right">
-                IOCX is our Omnichannel Customer Experience platform that unifies communication across WhatsApp, social media, email, web chat, and more helping your business deliver consistent, personalized, and efficient customer service.
+              <p className="mb-[30px] text-[16px] text-black text-center sm:text-right">
+                <span className="font-bold">IOCX</span> is our Omnichannel Customer Experience platform that unifies communication across <span className="font-bold">WhatsApp</span>, <span className="font-bold">social media</span>, <span className="font-bold">email</span>, <span className="font-bold">web chat</span>, and more helping your business deliver consistent, personalized, and efficient customer service.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6 justify-center sm:justify-end">
                 <p className="text-gray-600 text-sm text-center sm:text-right">

@@ -20,8 +20,8 @@ export default function RequestProjectPage() {
                 <h1 className="text-[30px] md:text-[40px] lg:text-[50px] font-bold text-gray-900 leading-tight">
                  Start Your <span className="text-primary">Career</span> with Real-World Tech Experience
                 </h1>
-                <p className="text-[16px] text-gray-700 leading-relaxed">
-                 Join IOI’s Internship Program and work on real projects in AI, IoT, software development, and digital transformation. Learn from industry experts and build the skills to thrive in the modern workplace.
+                <p className="text-[16px] text-black leading-relaxed">
+                 Join IOI’s Internship Program and work on real projects in <span className="font-bold">AI</span>, <span className="font-bold">IoT</span>, <span className="font-bold">software development</span>, and <span className="font-bold">digital transformation</span>. Learn from industry experts and build the skills to thrive in the modern workplace.
                 </p>
               </div>
             </div>
@@ -30,8 +30,8 @@ export default function RequestProjectPage() {
                 <button className="bg-primary hover:bg-[#1B9AAA] text-white font-semibold py-4 px-8 rounded-xl transition-colors duration-300">
                  Apply For Internship
                 </button>
-                <p className="text-sm text-gray-600 mt-3 text-center sm:text-right">
-                  Our team will respond within <b>1–2 business days</b>.
+                <p className="text-sm text-black mt-3 text-center sm:text-right italic">
+                  Our team will respond within <span className="font-bold">1–2 business days</span>.
                 </p>
               </div>
             </div>

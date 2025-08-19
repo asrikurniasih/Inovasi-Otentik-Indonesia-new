@@ -12,8 +12,8 @@ export default function PartnershipPage() {
             <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-black">
               Let&apos;s Grow Together Through <span className="text-primary">Strategic Partnerships</span>
             </div>
-            <p className="mb-[30px] text-[16px] text-gray-700">
-              At IOI, we believe that collaboration drives innovation. We work with technology providers, system integrators, resellers, and industry specialists to deliver smarter solutions for businesses, governments, and communities.
+            <p className="mb-[30px] text-[16px] text-black">
+              At IOI, we believe that collaboration drives innovation. We work with <span className="font-bold">technology providers</span>, <span className="font-bold">system integrators</span>, <span className="font-bold">resellers</span>, and <span className="font-bold">industry specialists</span> to deliver smarter solutions for businesses, governments, and communities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <button className="bg-[#1B9AAA] text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#1B9AAA] transition-colors">

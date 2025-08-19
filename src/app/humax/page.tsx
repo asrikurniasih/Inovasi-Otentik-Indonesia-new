@@ -20,7 +20,7 @@ export default function HumaxPage() {
                 Smarter HR Management for a More Productive Workforce
               </div>
               <p className="mb-[30px] text-[16px] text-gray-700">
-                HUMAX is our Smart Human Resource Management system that streamlines recruitment, attendance, payroll, and performance tracking all in one secure, cloud-based platform.
+              <span className="font-bold">HUMAX</span> is our Smart Human Resource Management system that streamlines recruitment, attendance, payroll, and performance tracking all in one secure, cloud-based platform.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6 justify-center sm:justify-end">
                 <p className="text-gray-600 text-sm">

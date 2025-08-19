@@ -8,7 +8,7 @@ export default function Solutions() {
         <div className="grid grid-cols-1 gap-0">
           <div className="text-[20px] lg:text-[40px] font-bold text-black text-center">
             <div>
-              Smart Solutions,<span className="text-primary">Built for Real Progress</span>
+              Smart Solutions,<span className="text-primary"> Built for Real Progress</span>
             </div>
             <div className="text-[18px] text-black font-normal mt-[18px] text-center">
               We deliver intelligent digital solutions that empower organizations to operate more efficiently, make smarter decisions, and scale sustainably. Whether you’re looking to automate operations, enhance user experience, or harness the power of AI  IOI is your trusted partner.

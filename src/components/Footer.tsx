@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <footer className="relative z-2 bg-[#0D1B2A] px-6 sm:px-[74px] py-10 sm:py-[55px]">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
-          <div className="w-full lg:col-span-3">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <div className="w-full">
             <Image src="/logo-ioi/logo.png" alt="IOI" width={350} height={350} className="rounded-3xl object-cover " />
             {/* <h4 className="text-xl font-semibold text-black mb-2 mt-4">
               PT Inovasi Otentik Indonesia
@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="ml-auto w-full px-4 mt-[20px] lg:col-span-2">
+          <div className="ml-auto w-full px-4 mt-[20px]">
             <div className='text-white grid grid-cols-3 gap-0 opacity-[75%]'>
               <div className='col-span-1'>
                 <div className='text-white mb-[12px] font-bold mb-4'>
@@ -104,7 +104,7 @@ export default function Footer() {
                   </div>
                 </Link>
               </div>
-              <div className='text-white opacity-[75%] mt-[30px] lg:col-span-2 col-span-3'>
+              <div className='text-white opacity-[75%] mt-[30px] lg:col-span-3 col-span-3'>
                 © 2025 PT Inovasi Otentik Indonesia. All rights reserved.
               </div>
             </div>

@@ -19,8 +19,8 @@ export default function SiagaPage() {
               <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-[#802012] text-center sm:text-right leading-[1.2]">
                 From Problem to Solution Faster, Smarter, and Accountable
               </div>
-              <p className="mb-[30px] text-[16px] text-gray-700">
-                SIAGA is our Smart Issue & Action Management system that empowers organizations to detect, report, track, and resolve issues quickly and transparently, ensuring accountability at every step.
+              <p className="mb-[30px] text-[16px] text-black">
+                <span className="font-bold">SIAGA</span> is our <span className="font-bold">Smart Issue & Action Management</span> system that empowers organizations to <span className="font-bold">detect</span>, <span className="font-bold">report</span>, <span className="font-bold">track</span>, and <span className="font-bold">resolve</span> issues quickly and transparently, ensuring accountability at every step.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
                 <button className="bg-[#1B9AAA] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#158a9a] transition-colors">

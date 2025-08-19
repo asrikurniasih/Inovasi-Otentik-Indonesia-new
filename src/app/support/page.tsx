@@ -46,8 +46,8 @@ export default function SupportPage() {
               <h1 className="text-[30px] md:text-[40px] lg:text-[50px] font-bold text-gray-900 leading-tight">
                 Faster, Smarter, and Always Available <span className="text-primary">Technical Support</span>
               </h1>
-              <p className="text-[16px] text-gray-700 leading-relaxed">
-                IOI provides 24/7 technical support through a combination of our AI-powered agent LIONA and expert human engineers. Whether it’s a quick fix or a complex issue, we make sure you get the right help, fast.
+              <p className="text-[16px] text-black leading-relaxed">
+                IOI provides <span className="font-bold">24/7 technical support</span> through a combination of our <span className="font-bold">AI-powered agent LIONA</span> and expert human engineers. Whether it’s a quick fix or a complex issue, we make sure you get the right help, fast.
               </p>
             </div>
           </div>

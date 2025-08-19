@@ -13,8 +13,8 @@ export default function ApiPage() {
               <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-[#1B9AAA]">
                 Connecting Systems, Powering Innovation
               </div>
-              <p className="mb-[30px] text-[16px] text-gray-700">
-                We develop and integrate APIs that enable your systems, apps, and platforms to work together <strong>seamlessly</strong>.
+              <p className="mb-[30px] text-[16px] text-black">
+                We develop and integrate APIs that enable your systems, apps, and platforms to <span className="font-bold">work together seamlessly</span>.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
                 <button className="bg-[#1B9AAA] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#158a9a] transition-colors">

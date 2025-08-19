@@ -13,8 +13,8 @@ export default function SoftwarePage() {
               <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-[#1B9AAA] leading-[1.2]">
                 Custom-Built Software for Your Unique Business Needs
               </div>
-              <p className="mb-[30px] text-[16px] text-gray-700">
-                We design and develop fully customized software solutions that align with your workflows, scale with your growth, and integrate seamlessly with your existing systems.
+              <p className="mb-[30px] text-[16px] text-black">
+                We design and develop <span className="font-bold">fully customized software solutions</span> that align with your workflows, scale with your growth, and integrate seamlessly with your existing systems.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
                 <button className="bg-[#1B9AAA] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#158a9a] transition-colors shadow-md">

@@ -13,8 +13,8 @@ export default function MobileDevelopmentPage() {
               <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-[#1B9AAA] leading-[1.2]">
                 Custom Mobile Applications for a Connected, Digital-First World
               </div>
-              <p className="mb-[30px] text-[16px] text-gray-700">
-                We create high-performance, user-friendly mobile apps for Android and iOS that help businesses improve customer engagement, streamline operations, and drive measurable growth.
+              <p className="mb-[30px] text-[16px] text-black">
+                We create <span className="font-bold">high-performance</span>, <span className="font-bold">user-friendly</span> mobile apps for <span className="font-bold">Android</span> and <span className="font-bold">iOS</span> that help businesses improve customer engagement, streamline operations, and drive measurable growth.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
                 <button className="bg-[#1B9AAA] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#158a9a] transition-colors">

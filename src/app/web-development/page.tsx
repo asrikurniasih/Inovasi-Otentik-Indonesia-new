@@ -13,8 +13,8 @@ export default function WebDevelopmentPage() {
               <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-black">
                 Custom Web Development for Smarter, Scalable Businesses
               </div>
-              <p className="mb-[30px] text-[16px] text-gray-700">
-                We design and build websites that are not only visually stunning but also high-performance, fully integrated, and 100% tailored to your business needs.
+              <p className="mb-[30px] text-[16px] text-black">
+                We design and build websites that are not only visually stunning but also <span className="font-bold">high-performance</span>, <span className="font-bold">fully integrated</span>, and <span className="font-bold">100% tailored</span> to your business needs.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
                 <button className="bg-[#1B9AAA] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#158a9a] transition-colors">

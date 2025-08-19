@@ -9,20 +9,17 @@ export default function DataIntegrationPage() {
         {/* Hero Section */}
         <section className="mx-auto mb-[55px] mt-[55px]">
           <div className="grid lg:grid-cols-3 gap-12 items-center">
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 lg:mr-[5rem]">
               <div className="md:text-[40px] text-[30px] font-extrabold mb-[15px] text-[#1B9AAA] leading-[1.2]">
                 Unify Your Data, Automate Your Operations
               </div>
-              <p className="mb-[30px] text-[16px] text-gray-700">
-                We help organizations centralize data from multiple sources and automate workflows for <strong>faster, smarter decision-making.</strong>
+              <p className="mb-[30px] text-[16px] text-black">
+                We help organizations centralize data from multiple sources and automate workflows for <span className="font-bold">faster, smarter decision-making.</span>
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
                 <button className="bg-[#1B9AAA] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#158a9a] transition-colors">
                   Discuss Your Data Project
                 </button>
-                <p className="text-gray-600 text-sm">
-                  Let&apos;s discuss your data integration needs with our experts.
-                </p>
               </div>
             </div>
             <div>

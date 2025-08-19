@@ -42,8 +42,8 @@ export default function RequestProjectPage() {
                   Let&apos;s Build <span className="text-primary">Your Next</span> {' '}
                   <span className="text-primary">Big Project</span> Together
                 </h1>
-                <p className="text-[16px] text-gray-700 leading-relaxed">
-                  Whether you need a custom software solution, a smart automation system, or an end-to-end digital transformation, our team is ready to bring your vision to life. Tell us about your project and we&apos;ll get back to you with the right approach.
+                <p className="text-[16px] text-black leading-relaxed">
+                  Whether you need a <span className="font-bold">custom software solution</span>, a <span className="font-bold">smart automation system</span>, or an <span className="font-bold">end-to-end digital transformation</span>, our team is ready to bring your vision to life. Tell us about your project and we&apos;ll get back to you with the right approach.
                 </p>
               </div>
             </div>
@@ -52,8 +52,8 @@ export default function RequestProjectPage() {
                 <button className="bg-primary hover:bg-[#1B9AAA] text-white font-semibold py-4 px-8 rounded-xl transition-colors duration-300">
                   Submit Your Request
                 </button>
-                <p className="text-sm text-gray-600 mt-3 text-center sm:text-right">
-                  Our team will respond within 1-2 business days
+                <p className="text-sm text-black mt-3 text-center sm:text-right italic">
+                  Our team will respond within <span className="font-bold">1-2 business days</span>
                 </p>
               </div>
             </div>
