@@ -3,6 +3,7 @@ import "./globals.css";
 import Script from "next/script";
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import FloatingContactButton from '@/components/FloatingContactButton'
 
 export const metadata: Metadata = {
   title: "Inovasi Otentik Indonesia",
@@ -57,6 +58,7 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
         <Footer />
+        <FloatingContactButton />
       </body>
     </html>
   );

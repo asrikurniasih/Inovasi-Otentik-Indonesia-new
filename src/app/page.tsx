@@ -8,7 +8,6 @@ import PricingSection from '@/components/PricingSection'
 import Solutions from '@/components/Solutions'
 import Build from '@/components/Build'
 import Ready from '@/components/Ready'
-import FloatingContactButton from '@/components/FloatingContactButton'
 
 // Main Page Component
 export default function Home() {
@@ -34,7 +33,6 @@ export default function Home() {
       <PricingSection />
       <Build />
       <Ready /> */}
-      <FloatingContactButton />
       {/* <DeveloperSection /> */}
       {/* <PaletteSection /> */}
       {/* <CodeSection /> */}

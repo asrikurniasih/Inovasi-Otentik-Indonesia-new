@@ -78,6 +78,11 @@ function DigitalProductDropdown() {
     { label: "Humax", href: "/humax" },
   ];
 
+  const menuItemsSolution = [
+    { label: "Nyuciin", href: "/#" },
+    { label: "Sentra Kas", href: "/#" },
+  ];
+
   // Close dropdown when clicking outside
   React.useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -132,6 +137,64 @@ function DigitalProductDropdown() {
   );
 }
 
+function SolutionDropdown() {
+  const [isOpenSolution, setIsOpenSolution] = React.useState(false);
+  const dropdownRefSolution = React.useRef<HTMLDivElement>(null);
+
+  const menuItemsSolution = [
+    { label: "Nyuciin", href: "/#" },
+    { label: "Sentra Kas", href: "/#" },
+  ];
+
+  // Close dropdown when clicking outside
+  React.useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRefSolution.current && !dropdownRefSolution.current.contains(event.target as Node)) {
+        setIsOpenSolution(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div className="relative" ref={dropdownRefSolution}>
+      <button
+        type="button"
+        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full cursor-pointer"
+        onClick={() => setIsOpenSolution(!isOpenSolution)}
+      >
+        <span className="text-[15px] font-normal">Solution</span>
+        <svg
+          className={`h-3 w-3 transition-transform ${isOpenSolution ? "rotate-180" : ""}`}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      {isOpenSolution && (
+        <div className="absolute left-0 mt-2 w-[150px] bg-white rounded-lg shadow-lg border py-1 z-30">
+          {menuItemsSolution.map((item, index) => (
+            <Link 
+              key={item.label} 
+              href={item.href} 
+              className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm transition-colors"
+              onClick={() => setIsOpenSolution(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
@@ -147,13 +210,8 @@ function NavList() {
       >
         <span className="text-[15px] font-normal">Services</span>
       </Link>
-      <Link
-        href="/solution"
-        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
-      >
-        <span className="text-[15px] font-normal">Solution</span>
-      </Link>
       <DigitalProductDropdown />
+      <SolutionDropdown />
       <Link
         href="/about-us"
         className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100 transition-colors text-blue-gray-900 lg:rounded-full"
